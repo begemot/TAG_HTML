@@ -4,3 +4,5 @@
 /**/*.DS_Store
 /**/package-lock.json
 app/assets/js/app.js.map
+app/assets/css/main.css
+app/assets/js/app.js
