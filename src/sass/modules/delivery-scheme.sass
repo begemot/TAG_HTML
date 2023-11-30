@@ -1,0 +1,112 @@
+.scheme-item
+	&__list
+		@include media-breakpoint-up(md)
+			@include make-row()
+
+		@include media-breakpoint-up(lg)
+			margin-left: -20px
+			margin-right: -20px
+
+	margin-bottom: 40px
+
+	@include media-breakpoint-up(md)
+		@include make-col(1, 2)
+		padding-left: 15px
+		padding-right: 15px
+
+	@include media-breakpoint-up(lg)
+		@include make-col(1, 3)
+		padding-left: 20px
+		padding-right: 20px
+
+	@include media-breakpoint-up(xl)
+		@include make-col(1, 4)
+
+	&__icon
+		display: flex
+		&__img-box
+			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 90px
+			height: 80px
+			padding: 12px
+
+			.svg-scheme-icon
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				z-index: 1
+
+			img
+				display: block
+				max-width: 100%
+
+		&__arrow
+			position: relative
+			display: block
+			width: calc(100% - 124px)
+			margin-left: 34px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				right: 1px
+				left: 0
+				display: block
+				height: 1px
+				margin-top: -1px
+				background-color: #FE6B00
+
+			i.icon-arrow-right
+				position: absolute
+				top: 50%
+				right: 0
+				width: 3.3px
+				height: 7px
+				margin-top: -4px
+				color: #FE6B00
+				font-size: 7px
+				line-height: 7px
+				vertical-align: top
+
+	&__title
+		margin-top: 20px
+		margin-bottom: 20px
+		font-size: 18px
+		line-height: 18px
+
+	&__time
+		display: block
+		margin-top: 20px
+		margin-bottom: 20px
+
+		i.icon-clock
+			width: 16px
+			height: 16px
+			margin-right: 10px
+			vertical-align: top
+
+	&__text
+		margin-top: 20px
+		line-height: 20px
+
+	&__payment
+		display: block
+		margin-top: 20px
+		padding: 12px 15px
+		font-size: 12px
+		font-weight: 600
+		line-height: 16px
+		background-color: #F2F2F2
+		border-radius: 2px
+
+.svg-scheme-icon
+	width: 90px
+	height: 80px
+	fill: #fd6a00
+	stroke-width: 1.33333337

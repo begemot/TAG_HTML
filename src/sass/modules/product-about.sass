@@ -1,0 +1,164 @@
+.product-about
+	position: relative
+	z-index: 2
+	display: flex
+	align-items: center
+	min-height: 100vh
+	padding-top: 80px
+	padding-bottom: 129px
+
+	@include media-breakpoint-up(md)
+		min-height: (800/768)*100vw
+
+	@include media-breakpoint-up(lg)
+		width: 50%
+		max-width: none
+		min-height: (650/1280)*100vw
+		margin-left: 50%
+		padding-left: 50px
+		background-color: #F4F4F4
+
+	&__wrap
+		position: relative
+		background-color: #ccc
+
+	&__content
+
+		@include media-breakpoint-up(lg)
+			max-width: 465px
+
+		@include media-breakpoint-up(xl)
+			max-width: 555px
+
+		.link-more
+			margin-top: 50px
+
+			@include media-breakpoint-up(md)
+				margin-top: 60px
+
+	&__title
+		@include title-font
+		margin-bottom: 40px
+		color: #fff
+		font-size: 36px
+		line-height: 47px
+
+		span
+			color: #FE6B00
+
+		@include media-breakpoint-up(md)
+			margin-bottom: 50px
+			font-size: 40px
+			line-height: 47px
+
+		@include media-breakpoint-up(lg)
+			margin-bottom: 59px
+			color: #333
+
+	&__text
+		color: #fff
+		line-height: 22px
+
+		& + &
+			margin-bottom: 40px
+
+		@include media-breakpoint-up(lg)
+			color: #333
+
+	&__image
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 1
+		background-repeat: no-repeat
+		background-position: 0 0
+		background-size: cover
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba(0, 0, 0, .3)
+
+		@include media-breakpoint-up(lg)
+			right: 50%
+
+	&__slider
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 1
+
+		.slick-list,
+		.slick-track,
+		.slick-slide
+			height: 100%
+
+		.slick-slide
+			position: relative
+
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				z-index: 2
+				display: block
+				background-color: rgba(0,0,0, .6)
+
+			& > div
+				position: relative
+				z-index: 1
+				height: 100%
+
+		@include media-breakpoint-up(lg)
+			right: 50%
+
+
+		&__item
+			height: 100%
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+
+	&__nav
+		position: relative
+		z-index: 3
+
+	&__arrows
+		top: auto
+		left: auto
+		right: 15px
+		bottom: 40px
+
+		@include media-breakpoint-up(lg)
+			right: auto
+			left: 50%
+			margin-left: 50px
+
+			.icon-slope-square-lg,
+			.icon-arrow-left,
+			.icon-arrow-right
+				color: #333
+
+			.hero-content__arrows--prev:hover,
+			.hero-content__arrows--next:hover
+				.icon-slope-square-lg,
+				.icon-arrow-left,
+				.icon-arrow-right
+					color: #BDBDBD
+
+	&__dots
+		top: auto
+		right: auto
+		left: 15px
+		bottom: 44px

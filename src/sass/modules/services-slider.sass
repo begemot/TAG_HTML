@@ -1,0 +1,99 @@
+.services-wrap
+	padding-top: 40px
+	padding-bottom: 30px
+
+.services-slider
+	margin-top: 50px
+
+	&__wrap
+		position: relative
+
+	&__slide
+		padding-bottom: 91px
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		background-size: cover
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			display: block
+			background-color: rgba(0, 0, 0, .8)
+
+		@include media-breakpoint-up(md)
+			padding-bottom: 105px
+
+		@include media-breakpoint-up(lg)
+			padding-bottom: 74px
+
+	&__nav
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+
+	&__arrows
+		top: auto
+		left: auto
+		right: 20px
+		bottom: 40px
+
+	&__dots
+		top: auto
+		right: auto
+		left: 20px
+		bottom: 44px
+
+.services-content
+	position: relative
+	z-index: 1
+	padding: 30px 0 20px
+
+	@include media-breakpoint-up(md)
+		padding: 80px 0 30px
+
+	@include media-breakpoint-up(lg)
+		margin-left: 50%
+
+	&__title
+		@include title-font
+		margin-bottom: 38px
+		color: #fff
+		font-size: 36px
+		line-height: 42px
+		text-transform: uppercase
+
+		span
+			color: #FE6B00
+
+		@include media-breakpoint-up(md)
+			margin-bottom: 39px
+			font-size: 60px
+			line-height: 70px
+
+	&__list
+		margin: 0 0 36px
+		padding: 0
+		list-style: none
+		color: #fff
+		line-height: 17px
+
+		li
+			& + li
+				margin-top: 8px
+
+			&::before
+				content: '• '
+				font-weight: 700
+				color: #FE6B00
+
+		@include media-breakpoint-up(md)
+			margin-bottom: 35px
+
+			li
+				& + li
+					margin-top: 6px

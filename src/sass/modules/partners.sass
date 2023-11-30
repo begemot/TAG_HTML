@@ -1,0 +1,121 @@
+.partner
+	margin-bottom: 50px
+
+	@include media-breakpoint-up(lg)
+		display: flex
+		flex-wrap: wrap
+
+	&__image
+		margin-bottom: 20px
+
+		img
+			display: block
+			width: 100%
+			height: auto
+
+		@include media-breakpoint-up(lg)
+			flex-basis: (570/1180)*100%
+			width: (570/1180)*100%
+			margin-bottom: 0
+
+	&__content
+
+		@include media-breakpoint-up(md)
+			display: flex
+			flex-wrap: wrap
+
+		@include media-breakpoint-up(lg)
+			flex-direction: column
+			justify-content: center
+
+		&__description
+			@include media-breakpoint-up(md)
+				flex: 1
+
+			@include media-breakpoint-up(lg)
+				flex: 0 1 auto
+
+		@include media-breakpoint-up(lg)
+			flex-basis: (610/1180)*100%
+			width: (610/1180)*100%
+			padding-left: 50px
+
+		.link-more
+
+	&__logotype
+		margin-bottom: 20px
+
+		@include media-breakpoint-up(md)
+			flex-basis: 178px
+			padding-right: 40px
+
+		@include media-breakpoint-up(lg)
+			flex: 0 1 auto
+			padding-right: 0
+
+	&__title
+		margin-top: 0
+		margin-bottom: 20px
+		font-size: 16px
+		line-height: 18px
+
+	&__text
+		margin-bottom: 30px
+
+.lizing
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	margin-top: 30px
+	margin-bottom: 40px
+
+	@include media-breakpoint-up(md)
+		justify-content: center
+
+	@include media-breakpoint-up(lg)
+		justify-content: space-between
+
+	&__item
+		@include make-col(1, 2)
+		display: flex
+		align-items: center
+		min-height: 60px
+		padding-top: 10px
+		padding-bottom: 20px
+
+		&:nth-child(1n + 2):last-child
+			@include make-col(1, 1)
+			justify-content: center
+
+		&:nth-child(2n + 2)
+			justify-content: flex-end
+
+		img
+			display: block
+			max-width: 100%
+			max-height: 100%
+			height: auto
+
+		@include media-breakpoint-up(md)
+			@include make-col(1, 3)
+			justify-content: center
+
+			&:nth-child(1n + 2):last-child
+				@include make-col(1, 3)
+				justify-content: center
+
+			&:nth-child(2n + 2)
+				justify-content: center
+
+			&:first-child
+				justify-content: flex-start
+
+			&:nth-child(3)
+				justify-content: flex-end
+
+		@include media-breakpoint-up(lg)
+			flex: 0 1 auto
+
+			&:nth-child(1n + 2):last-child
+				flex: 0 1 auto

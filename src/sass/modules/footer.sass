@@ -1,0 +1,233 @@
+.footer
+	background-color: #1E1E1E
+
+.partners
+	display: flex
+	flex-wrap: wrap
+	padding-top: 10px
+	padding-bottom: 10px
+
+	@include media-breakpoint-up(md)
+		justify-content: space-between
+
+.partner-item
+	@include make-col(1, 2)
+	display: flex
+	padding: 5px 0px
+	justify-content: center
+	align-items: center
+
+	img
+		display: block
+		max-width: 100%
+		height: auto
+		max-height: 50px
+
+	@include media-breakpoint-up(md)
+		flex: 0 1 auto
+		padding: 10px 0
+
+	@include media-breakpoint-up(lg)
+		padding: 13px 0
+
+		img
+			max-height: 75px
+
+// content
+.footer-content
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	padding-top: 30px
+	padding-bottom: 22px
+
+	@include media-breakpoint-up(md)
+		flex-direction: row
+		padding-top: 50px
+
+	@include media-breakpoint-up(md)
+		padding-bottom: 44px
+
+	&__logo
+		display: block
+		margin-bottom: 30px
+		margin-left: auto
+		margin-right: auto
+		@include title-font
+		color: #fff
+		font-size: 18px
+		line-height: 80%
+
+		span
+			display: block
+			&:first-letter
+				color: #FE6B00
+
+		@include media-breakpoint-up(md)
+			margin-right: 60px
+
+		@include media-breakpoint-up(lg)
+			margin-right: 93px
+
+// links
+.footer-info
+
+	&__wrap
+		flex: 1
+		display: flex
+		flex-wrap: wrap
+
+	&--col
+		@include make-col(1, 1)
+
+		@include media-breakpoint-up(sm)
+			@include make-col(1, 2)
+
+		@include media-breakpoint-up(md)
+			@include make-col(1, 3)
+
+		@include media-breakpoint-up(lg)
+			@include make-col(1, 5)
+
+	margin-bottom: 30px
+
+	@include media-breakpoint-up(md)
+		margin-bottom: 50px
+
+	&__header
+		margin-bottom: 20px
+		color: #FE6B00
+		font-weight: 600
+		line-height: 17px
+		text-align: center
+
+		@include media-breakpoint-up(md)
+			text-align: left
+
+	&__list
+		margin: 0
+		padding: 0
+		list-style: none
+		color: #fff
+		font-size: 12px
+		line-height: 15px
+		text-align: center
+
+		@include media-breakpoint-up(md)
+			text-align: left
+
+		li + li
+			margin-top: 10px
+
+		a
+			display: inline-block
+			color: #fff
+			transition: color .15s
+
+			&:hover
+				color: #FE6B00
+				text-decoration: none
+
+// social
+.copy
+	margin-bottom: 18px
+	color: #fff
+	font-size: 12px
+	line-height: 15px
+	text-align: center
+
+	@include media-breakpoint-up(md)
+		text-align: left
+
+	@include media-breakpoint-up(lg)
+		order: 2
+		text-align: center
+
+.footer-address
+	margin-bottom: 29px
+	color: #fff
+	font-size: 12px
+	line-height: 15px
+	text-align: center
+
+	@include media-breakpoint-up(md)
+		order: 3
+		text-align: right
+
+.footer-social
+	display: flex
+	flex-wrap: wrap
+	margin: 0 0 11px
+	padding: 0
+	list-style: none
+	justify-content: center
+
+	@include media-breakpoint-up(lg)
+		justify-content: start
+
+	li
+		display: flex
+		flex-direction: column
+		justify-content: center
+		margin-bottom: 20px
+
+		& + li
+			margin-left: 20px
+
+	&__link
+		display: inline-block
+		color: #FFF
+		vertical-align: top
+		text-align: center
+
+		&:hover
+			text-decoration: none
+
+		i
+			vertical-align: top
+
+		&--instagramm
+			width: 16px
+			height: 16px
+
+			i
+				width: 16px
+				height: 16px
+				font-size: 15px
+				line-height: 16px
+
+		&--youtube
+			width: 18px
+			height: 13.83px
+
+			i
+				width: 16px
+				height: 13.83px
+				font-size: 13px
+				line-height: 13.83px
+
+.footer-links
+	display: flex
+	flex-wrap: wrap
+	margin: 0
+	padding: 25px 0 13px
+	list-style: none
+	justify-content: center
+
+	@include media-breakpoint-up(md)
+		padding-bottom: 7px
+
+	li
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 18px
+
+	a
+		color: #FFF
+		font-size: 10px
+		line-height: 12px
+		opacity: 0.5
+		transition: opacity .2s
+
+		&:hover
+			opacity: 0.7

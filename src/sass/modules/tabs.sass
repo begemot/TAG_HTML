@@ -1,0 +1,70 @@
+// Skin for Tabs
+.nav
+	display: flex
+	flex-wrap: wrap
+	padding-left: 0
+	margin-bottom: 0
+	list-style: none
+
+.nav-link
+	display: block
+	padding: 3px 0
+	line-height: 25px
+
+	&:hover,
+	&:focus
+		text-decoration: none
+
+	&.disabled
+		color: #6c757d
+		pointer-events: none
+		cursor: default
+
+.nav-tabs
+	white-space: nowrap
+	border-bottom: 1px solid #B6BCC3
+
+	.nav-item
+		margin-bottom: -1px
+
+		& + .nav-item
+			margin-left: 15px
+
+	.nav-link
+		border-bottom: 2px solid transparent
+		transition: border-color .15s, color .15s
+
+	.nav-link:hover,
+	.nav-link:focus
+		color: #FE6B00
+		border-bottom-color: #FE6B00
+
+	&.disabled
+		color: #6c757d
+		border-color: transparent
+
+	.nav-link.active,
+	.nav-item.show .nav-link
+		color: #FE6B00
+		font-weight: 500
+		border-bottom-color: #FE6B00
+
+.tab-content
+	& > .tab-pane
+		display: none
+
+	& > .active
+		display: block
+
+.fade
+	-webkit-transition: opacity 0.15s linear
+	-o-transition: opacity 0.15s linear
+	transition: opacity 0.15s linear
+
+	@media (prefers-reduced-motion: reduce)
+		-webkit-transition: none
+		-o-transition: none
+		transition: none
+
+	&:not(.show)
+		opacity: 0

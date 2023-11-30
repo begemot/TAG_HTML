@@ -1,0 +1,96 @@
+.benefits
+	margin-top: 40px
+
+	& + .btn
+		width: 230px
+		margin-left: auto
+		margin-right: auto
+		margin-top: 30px
+
+	@include media-breakpoint-up(sm)
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		position: relative
+		min-height: 180px
+		height: (180/320)*100vw
+		padding: 30px 15px
+		overflow: hidden
+
+		@include media-breakpoint-up(sm)
+			@include make-col(1, 2)
+			height: (180/768)*100vw
+			padding: 30px
+
+		@include media-breakpoint-up(md)
+			@include make-col(1, 3)
+			height: (180/992)*100vw
+
+		@include media-breakpoint-up(lg)
+			@include make-col(1, 4)
+			height: (180/1280)*100vw
+			padding: 30px 40px
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: 2
+			display: block
+			background-color: rgba(0, 0, 0, 0.5)
+			transition: background-color .2s
+
+		&::after
+			@include icon-font
+			content: '\e801'
+			position: absolute
+			left: 15px
+			bottom: 30px
+			z-index: 3
+			color: #FFF
+			font-size: 10px
+			transition: margin-left .2s
+
+			@include media-breakpoint-up(sm)
+				left: 30px
+
+			@include media-breakpoint-up(lg)
+				left: 40px
+
+		&__title
+			position: relative
+			z-index: 4
+			@include title-font
+			color: #FFF
+			font-size: 18px
+			line-height: 24px
+			text-transform: uppercase
+
+		&__img
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: 1
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			background-size: cover
+			transition: all .2s
+
+		&:hover
+			&::before
+				background-color: rgba(0, 0, 0, 0.35)
+
+			&::after
+				margin-left: 10px
+			
+			.benefits__item__img
+				top: -8px
+				left: -8px
+				right: -8px
+				bottom: -8px

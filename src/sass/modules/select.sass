@@ -1,0 +1,246 @@
+// modified code from '../../node_modules/jquery-selectric/src/selectric.scss'
+$selectric-main-color:      #B6BCC3 !default                                              // Color used in border
+$selectric-secondary-color: #BBB !default                                              // Color used in button
+$selectric-text-color:      #444 !default                                              // Color used in label
+$selectric-bg-color:        #F8F8F8 !default                                           // Background color
+$selectric-height:          35px !default                                              // Outer height
+$selectric-spacing:         10px !default                                              // Label left padding
+$selectric-border-width:    1px !default                                               // Outer border width
+$selectric-inner-height:    $selectric-height - $selectric-border-width !default // Inner height
+
+
+.filter-element-wrapper
+
+	white-space: nowrap
+	.tagsBlock
+		display: flex
+		flex-wrap: wrap
+		.selectTag
+			padding: 11px
+			padding-top: 3px
+			padding-bottom: 3px
+			margin: 2px
+			background-color: #FE6B00
+			color: white
+			border-radius: 10px
+			cursor: pointer
+			&:hover
+				background-color: black
+
+			.icon-filters-close
+				margin-left: 11px
+				font-size: 11px
+
+				font-weight: bold
+				top: -1px
+				position: relative
+
+
+.selectric-wrapper
+	position: relative
+	cursor: pointer
+	&:hover
+		color: #FE6B00
+		border-color: #FE6B00
+
+
+.selectric-responsive
+	width: 100%
+
+.selectric
+	border-bottom: $selectric-border-width solid $selectric-main-color
+	background-color: transparent
+	position: relative
+	transition: border-color .2s
+
+	.label
+		display: block
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		margin: 0 $selectric-inner-height 0 0
+		padding: 4px 0 8px
+		line-height: 22px
+		height: $selectric-inner-height
+		user-select: none
+		transition: color .2s
+
+	.button
+		display: block
+		position: absolute
+		right: 0
+		top: 0
+		width: $selectric-inner-height
+		height: $selectric-inner-height
+		overflow: hidden
+		text-indent: -999px
+
+		&:after
+			content: " "
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			margin: auto
+			width: 0
+			height: 0
+			border: 0
+			border-top-color: $selectric-secondary-color
+			border-bottom: none
+
+		&::before
+			content: '\e803'
+			@include icon-font
+
+			position: absolute
+			left: calc(50% - 10.14px/2)
+			top: calc(50% - 5.78px/2)
+			text-indent: 0
+			color: #333
+			width: 10.14px
+			height: 5.78px
+			font-size: 5.78px
+			transition: color .2s
+
+
+
+.selectric-focus .selectric
+
+.selectric-hover .selectric
+	color: #FE6B00
+	border-color: #FE6B00
+
+	.button
+		&::before
+			color: #FE6B00
+
+.selectric-open
+	z-index: 9999
+
+	.selectric
+		color: #FE6B00
+		border-color: transparent
+
+	.selectric-items
+		display: block
+
+.selectric-disabled
+	filter: alpha(opacity=50)
+	opacity: 0.5
+	cursor: default
+	user-select: none
+
+.selectric-hide-select
+	position: relative
+	overflow: hidden
+	width: 0
+	height: 0
+
+	select
+		position: absolute
+		left: -100%
+		display: none
+
+.selectric-input
+	position: absolute !important
+	top: 0 !important
+	left: 0 !important
+	overflow: hidden !important
+	clip: rect(0, 0, 0, 0) !important
+	margin: 0 !important
+	padding: 0 !important
+	width: 1px !important
+	height: 1px !important
+	outline: none !important
+	border: none !important
+	*font: 0/0 a !important
+	background: none !important
+
+.selectric-temp-show
+	position: absolute !important
+	visibility: hidden !important
+	display: block !important
+
+/* Items box */
+.selectric-items
+	display: none
+	position: absolute
+	top: calc(100% - 1px)
+	left: 0
+	z-index: -1
+	background-color: #fff
+	border: 1px solid #FE6B00
+	border-radius: 2px
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+	color: #333
+	max-height: 200px
+	overflow-y: scroll
+
+	.selectric-scroll
+		height: 100%
+		overflow: auto
+
+	.selectric-above &
+		top: auto
+		bottom: 100%
+
+	ul, li
+		list-style: none
+		padding: 0
+		margin: 0
+		line-height: 20px
+		min-height: 20px
+
+	li
+		display: block
+		padding: 10px 15px
+		cursor: pointer
+
+		& + li
+			border-top: 1px solid #E0E0E0
+
+			&.selected
+				border-top: 1px solid #FE6B00
+
+		&.selected
+			color: #fff
+			background-color: #FE6B00
+
+			&:hover
+				color: #fff
+
+		&:hover
+			color: #FE6B00
+
+	.disabled
+		filter: alpha(opacity=50)
+		opacity: 0.5
+		cursor: default !important
+		background-color: none !important
+		color: #666 !important
+		user-select: none
+
+	.selectric-group
+		.selectric-group-label
+			font-weight: bold
+			padding-left: 10px
+			cursor: default
+			user-select: none
+			background: none
+
+		&.disabled li
+			filter: alpha(opacity=100)
+			opacity: 1
+
+		li
+			padding-left: 25px
+
+// custom
+.select
+	&__label
+		display: block
+		margin-bottom: -1px
+		color: #979FA8
+		font-size: 10px
+		line-height: 12px

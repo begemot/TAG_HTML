@@ -1,0 +1,123 @@
+#modal-nav
+	.modal-dialog
+		max-width: none
+		min-height: 100%
+		margin: 0
+
+	.modal-content
+		min-height: 100%
+		margin: 0
+		padding: 0
+
+.modal-nav
+
+	&__dialog
+		display: flex
+		flex-direction: column
+		min-height: 100%
+		padding-top: (34/720)*100vw
+		padding-left: (50/720)*100vw
+		padding-right: (50/720)*100vw
+		padding-bottom: (35/720)*100vw
+		background-color: #FE6B00
+
+		@include media-breakpoint-up(md)
+			padding-top: 34px
+			padding-left: 50px
+			padding-right: 50px
+			padding-bottom: 35px
+
+	&__header
+		display: flex
+		margin-bottom: 30px
+
+	&__btn-close
+		position: relative
+		margin-left: auto
+		color: #fff
+		width: 16px
+		height: 16px
+
+		i.icon-close
+			width: 16px
+			height: 16px
+			font-size: 16px
+			line-height: 16px
+
+	&__content
+		position: relative
+		margin-top: auto
+		margin-bottom: auto
+		margin-left: -(50/720)*100vw
+		margin-right: -(50/720)*100vw
+		padding-left: (50/720)*100vw
+		padding-right: (50/720)*100vw
+		overflow: hidden
+
+		@include media-breakpoint-up(md)
+			margin-left: -50px
+			margin-right: -50px
+			padding-left: 50px
+			padding-right: 50px
+
+		&__list
+			margin: 0
+			padding: 0
+			list-style: none
+
+			li + li
+				margin-top: (29/720)*100vw
+
+				@include media-breakpoint-up(md)
+					margin-top: 29px
+
+			a
+				position: relative
+				color: #FFF
+				font-size: (30/720)*100vw
+				font-weight: 600
+				line-height: (37/30)*1em
+				opacity: 0.7
+				transition: opacity .2s, color .2s
+
+				@include media-breakpoint-up(md)
+					font-size: 30px
+
+				&:hover
+					color: #FFF
+					opacity: 1
+					text-decoration: none
+
+				&.active
+					color: #FFF
+					opacity: 1
+
+					&::after
+						@include icon-font
+
+						content: '\e801'
+						position: absolute
+						top: 50%
+						left: -(50/720)*100vw
+						width: 21.21px
+						height: 7.71px
+						margin-top: -3.855px
+						font-size: 7.71px
+						line-height: 7.71px
+
+						@include media-breakpoint-up(md)
+							left: -50px
+
+	&__footer
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+
+		.footer-social
+			margin: 0
+
+			li
+				margin-bottom: 0
+
+		.copy
+			margin: 0

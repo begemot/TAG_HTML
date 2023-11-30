@@ -1,0 +1,109 @@
+// import default styles for slider
+@import '../../node_modules/bootstrap/scss/_modal.scss'
+
+.modal-dialog
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 100%
+	width: 100%
+	max-width: 100%
+	margin: 0
+
+	@include media-breakpoint-up(md)
+		max-width: 600px
+		margin: 0 auto
+
+.modal-content
+	position: relative
+	flex-grow: 1
+	padding: 30px 20px
+	border: 0
+	border-radius: 0
+	background-clip: border-box
+
+	@include media-breakpoint-up(md)
+		flex-grow: 0
+		margin-top: 50px
+		margin-bottom: 50px
+		padding: 40px
+
+.btn-modal-close
+	position: absolute
+	top: 5px
+	right: 4.74px
+	display: block
+	width: 22.26px
+	height: 22.26px
+	padding: 5px
+
+	i
+		width: 12.26px
+		height: 12.26px
+		color: #FE6B00
+		font-size: 12.26px
+		line-height: 12.26px
+		vertical-align: top
+		transition: color .2s
+
+	@include media-breakpoint-up(md)
+		top: 15px
+		right: 15px
+
+		i
+			color: #333
+
+		&:hover i
+			color: #FE6B00
+
+// content styles
+.modal-title
+	margin-bottom: 16px
+	@include title-font
+	font-size: 20px
+	line-height: 26px
+	text-transform: uppercase
+
+	@include media-breakpoint-up(md)
+		margin-bottom: 20px
+		font-family: $font
+		font-style: normal
+		font-size: 18px
+		line-height: 22px
+
+.modal-content
+	p
+		margin-bottom: 17px
+		line-height: 17px
+
+	.input-box
+		margin-top: 27px
+
+.form-footer
+	margin-top: 30px
+	display: flex
+	flex-direction: column
+
+	.btn
+		margin-bottom: 10px
+
+	> span
+		font-size: 10px
+		line-height: 12px
+
+		a
+			text-decoration: underline
+
+			&:hover
+				color: #333
+				text-decoration: none
+
+	@include media-breakpoint-up(md)
+		flex-direction: row
+		align-items: center
+
+		.btn
+			width: 100%
+			max-width: 221px
+			margin-bottom: 0
+			margin-right: 24px

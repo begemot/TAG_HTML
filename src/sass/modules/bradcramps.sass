@@ -1,0 +1,42 @@
+// bradcramps
+.breadcrumbs
+	display: flex
+	flex-wrap: wrap
+	margin: 20px 0
+	padding: 0
+	@include title-font
+	list-style: none
+
+	@include media-breakpoint-up(md)
+		margin-top: 30px
+		margin-bottom: 30px
+
+	li
+		line-height: 16px
+
+		& + li
+			position: relative
+			padding-left: 26px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 7.5px
+				display: block
+				width: 6px
+				height: 6px
+				margin-top: -3px
+				border-left: 1px solid #979FA8
+				border-bottom: 1px solid #979FA8
+				transform: rotate(-135deg)
+
+		& + li:last-child::before
+			border-left-color: #333
+			border-bottom-color: #333
+
+
+		&.current
+
+	a
+		color: #979FA8

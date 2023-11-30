@@ -1,0 +1,47 @@
+.select-auto-tab
+	display: none
+	padding-left: 0
+	margin-bottom: 0
+	list-style: none
+	border-bottom: .5px solid #B6BCC3
+	
+	@include media-breakpoint-up(md)
+		display: flex
+		justify-content: space-between
+	
+	@include media-breakpoint-up(lg)
+		justify-content: center
+
+	li
+		margin-bottom: -1px
+
+		& + li
+			margin-left: 5px
+
+			@include media-breakpoint-up(lg)
+				margin-left: 50px
+
+
+	&__link
+		display: block
+		padding: 28px 0
+		color: #333
+		font-size: 12px
+		font-weight: 500
+		line-height: 15px
+		border-bottom: 2px solid transparent
+		transition: border-color .15s, color .15s
+
+		@include media-breakpoint-up(lg)
+			padding: 29px 0 25px
+			font-size: 14px
+
+		&.active
+			font-weight: 700
+
+		&.active,
+		&:hover,
+		&:focus
+			color: #FE6B00
+			border-bottom-color: #FE6B00
+			text-decoration: none

@@ -1,0 +1,141 @@
+.product-review__wrap
+	position: relative
+	//height: 540px
+	min-height: 100vh
+	background-color: rgba(0,0,0,.6)
+
+	.tab-content > .tab-pane
+		display: block !important
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 1
+		opacity: 0
+		visibility: hidden
+		transition: opacity .15s
+
+	.tab-content > .active
+		position: relative
+		z-index: 2
+		opacity: 1
+		visibility: visible
+
+.product-review__switch
+	position: absolute
+	top: 34px
+	left: 0
+	right: 0
+	z-index: 5
+
+	.nav-tabs
+		justify-content: center
+		border-bottom-color: #979FA8
+
+	.nav-link
+		color: #fff
+
+.product-review__exterior,
+.product-review__interior
+	position: relative
+
+	&__top
+		position: relative
+		z-index: 1
+		height: 540px
+		min-height: calc(100vh - #{(180/320)*100vw})
+
+		.slick-list,
+		.slick-track,
+		.slick-slide
+			height: 100%
+
+		.slick-slide
+			position: relative
+
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				z-index: 2
+				background-color: rgba(0, 0, 0, .5)
+
+			> div
+				position: relative
+				z-index: 1
+
+			div
+				height: 100%
+
+		@include media-breakpoint-up(md)
+			min-height: calc(100vh - #{(216/768)*100vw})
+
+		@include media-breakpoint-up(lg)
+			min-height: calc(100vh - #{(180/1280)*100vw})
+
+	&__down
+		height: (180/320)*100vw
+
+		.slick-list,
+		.slick-track,
+		.slick-slide
+			height: 100%
+
+		.slick-slide
+			position: relative
+
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				z-index: 2
+				background-color: rgba(0, 0, 0, .5)
+
+			> div
+				position: relative
+				z-index: 1
+
+			div
+				height: 100%
+
+		@include media-breakpoint-up(md)
+			height: (216/768)*100vw
+
+		@include media-breakpoint-up(lg)
+			height: (180/1280)*100vw
+
+	&__item
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		background-size: cover
+
+	&__nav
+		position: relative
+
+	&__arrows
+		display: none
+
+		@include media-breakpoint-up(md)
+			display: block
+			top: auto
+			left: auto
+			right: 15px
+			bottom: 40px
+
+	&__dots
+		right: 50%
+		transform: translateX(50%)
+		bottom: 30px
+
+		@include media-breakpoint-up(md)
+			right: auto
+			left: 15px
+			bottom: 47px
+			transform: translateX(0)

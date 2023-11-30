@@ -1,0 +1,108 @@
+.gallery
+	margin-top: 40px
+	margin-bottom: 30px
+	padding-left: 15px
+	padding-right: 15px
+
+	@include media-breakpoint-up(sm)
+		padding: 0
+
+	&__slider
+		position: relative
+		z-index: 1
+
+		&__wrap
+			position: relative
+
+		&__item
+			display: block !important
+
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				z-index: 2
+				display: block
+				background-color: rgba(0, 0, 0, 0.3)
+
+			img
+				position: relative
+				z-index: 1
+				display: block
+				width: 100%
+				max-width: 100%
+				height: auto
+
+	&__arrows
+		position: absolute
+		z-index: 3
+		display: none
+
+		@include media-breakpoint-up(md)
+			display: block
+			top: auto
+			left: auto
+			right: 30px
+			bottom: 30px
+
+		@include media-breakpoint-up(lg)
+			right: 50px
+			bottom: 40px
+
+	&__dots
+		z-index: 3
+		bottom: 20px
+		right: 50%
+		transform: translateX(50%)
+
+		@include media-breakpoint-up(md)
+			display: block
+			right: auto
+			left: 30px
+			bottom: 37px
+			transform: translateX(0)
+
+		@include media-breakpoint-up(lg)
+			left: 50px
+			bottom: 47px
+
+	&__thumbs
+		display: none
+
+		@include media-breakpoint-up(md)
+			display: block
+
+		&__item
+			display: block !important
+
+			img
+				position: relative
+				z-index: 1
+				display: block
+				width: 100%
+				max-width: 100%
+				height: auto
+
+	&__link
+		@include title-font
+		display: inline-block
+		margin-top: 30px
+		margin-bottom: 30px
+		color: #333
+		font-size: 14px
+		line-height: 18px
+		text-decoration: underline
+
+		&:hover
+			text-decoration: none
+
+		@include media-breakpoint-up(md)
+			font-size: 18px
+			line-height: 24px
+
+		@include media-breakpoint-up(lg)
+			margin-top: 40px
+			margin-bottom: 60px

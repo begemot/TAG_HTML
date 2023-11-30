@@ -1,0 +1,523 @@
+.header--blur
+	position: relative
+	z-index: 10
+	backdrop-filter: blur(10px)
+
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 1
+		background-color: rgba(#333, .3)
+
+	> *
+		position: relative
+		z-index: 2
+
+.header
+	position: relative
+	display: flex
+	padding-top: 12px
+	padding-bottom: 13px
+
+	@include media-breakpoint-up(md)
+		padding-top: 22px
+		padding-bottom: 23px
+
+.logo
+	display: inline-block
+
+	&:hover
+		text-decoration: none
+
+.navigation
+	margin: 0
+	padding: 0
+	list-style: none
+	justify-content: center
+	align-items: center
+
+	.--show-search &
+		opacity: 0
+		visibility: hidden
+
+	a
+		color: #333
+		font-weight: 600
+		line-height: 17px
+		transition: color .2s
+
+		.header--blur &
+			color: #fff
+
+		&:hover
+			color: #FE6B00
+			text-decoration: none
+
+	@include media-breakpoint-up(xl)
+		display: flex
+		flex-wrap: wrap
+		margin-left: auto
+
+		> li
+			position: relative
+			margin-left: 25px
+			margin-right: 25px
+
+			&:hover
+				.submenu__link
+					color: #FE6B00
+
+					i
+						color: #FE6B00
+						transform: rotate(180deg)
+
+					& ~ .submenu
+						z-index: 10
+						opacity: 1
+						visibility: visible
+
+.submenu
+	margin: 0
+	padding: 0
+	list-style: none
+
+	a
+		.header--blur &
+			color: #333
+
+	&__link
+		position: relative
+		padding-right: 13px
+
+		i
+			position: absolute
+			top: 50%
+			right: 0
+			width: 8px
+			height: 4px
+			margin-top: -2px
+			color: #333
+			font-size: 4.5px
+			line-height: 4px
+			vertical-align: top
+			transition: color .2s, transform .2s
+
+			.header--blur &
+				color: #fff
+
+	@include media-breakpoint-up(xl)
+		position: absolute
+		top: 100%
+		left: 0
+		z-index: -1
+		opacity: 0
+		visibility: hidden
+		display: block !important
+		min-width: 200px
+		margin-top: 8px
+		line-height: 20px
+		background-color: #fff
+		border: 1px solid #FE6B00
+		border-radius: 2px
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+
+		&::before
+			content: ''
+			position: absolute
+			top: -12px
+			left: 0
+			display: block
+			width: 100%
+			height: 12px
+
+		&:hover
+			z-index: 10
+			opacity: 1
+			visibility: visible
+
+			& ~ *
+				background-color: red
+
+
+		li + li
+			border-top: 1px solid #E0E0E0
+
+		a
+			display: block
+			padding: 10px 15px
+			background-color: #fff
+			transition: color .15s, background-color .15s
+
+			&:hover
+				color: #fff
+				background-color: #FE6B00
+				text-decoration: none
+
+// mobile navigation styles
+@media (max-width: 1199px)
+	// .--show-mobile-menu
+	// 	.navigation
+	// 		opacity: 1
+	// 		z-index: 10
+	// 		visibility: visible
+	// 		margin-top: 0
+
+	// 		&::before
+	// 			content: ''
+	// 			position: absolute
+	// 			top: -1px
+	// 			left: 50%
+	// 			bottom: 0
+	// 			z-index: 1
+	// 			width: 100vw
+	// 			margin-left: -50vw
+	// 			background-color: rgba(#fff, .9)
+				
+	// 			.header--blur &
+	// 				background-color: rgba(#333, .7)
+
+	// 		> li
+	// 			z-index: 2
+
+	// 	.header__contacts__viber,
+	// 	.header__contacts__whatsapp,
+	// 	.search-wrap
+	// 		opacity: 0
+	// 		visibility: hidden
+
+	// 	.header__contacts__phone
+	// 		position: absolute
+	// 		top: 22px
+	// 		right: 6px
+	// 		display: block
+
+	// 		@include media-breakpoint-up(md)
+	// 			top: 32px
+
+	.navigation
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		z-index: -1
+		opacity: 0
+		visibility: hidden
+		margin-top: -10px
+		transition: opacity .2s, margin-top .2s
+
+		> li
+			position: relative
+			padding-top: 10px
+			padding-bottom: 10px
+			border-bottom: 1px solid #B6BCC3
+
+	.submenu
+		position: relative
+		top: 10px
+		display: none
+
+		&__link
+			position: static
+			padding-right: 40px
+
+			i
+				display: none
+
+		> li
+			padding-top: 10px
+			padding-bottom: 10px
+			border-top: 1px solid #B6BCC3
+
+		a
+			font-weight: 500
+		
+			.header--blur &
+				color: #fff
+		
+
+.btn-submenu-open
+	position: absolute
+	top: 0
+	right: 0
+	display: block
+	width: 40px
+	height: 40px
+
+	i
+		position: absolute
+		top: 50%
+		right: 50%
+		width: 8px
+		height: 4px
+		margin-top: -2px
+		margin-right: -4px
+		color: #333
+		font-size: 4.5px
+		line-height: 4px
+		vertical-align: top
+		transition: color .2s, transform .2s
+
+		.header--blur &
+			color: #fff
+
+	&:hover,
+	&.active
+		i
+			color: #FE6B00
+			transform: rotate(180deg)
+
+	@include media-breakpoint-up(xl)
+		display: none
+
+.header__contacts
+	display: flex
+	flex-wrap: wrap
+	margin-left: auto
+	align-items: center
+
+	a
+		margin-right: 30px
+		color: #333
+		vertical-align: top
+		transition: color .2s
+
+		.header--blur &
+			color: #fff
+
+		.--show-search &
+			opacity: 0
+			visibility: hidden
+
+		&:hover
+			color: #FE6B00
+			text-decoration: none
+
+	&__phone
+		display: none
+		font-weight: 600
+		line-height: 17px
+
+		@include media-breakpoint-up(sm)
+			display: inline-block
+
+	&__viber
+		display: block
+		width: 16px
+		height: 16px
+
+		i
+			width: 16px
+			height: 16px
+			font-size: 16px
+			line-height: 16px
+			vertical-align: top
+
+
+	&__whatsapp
+		display: block
+		width: 18px
+		height: 18px
+
+		i
+			width: 18px
+			height: 18px
+			font-size: 18px
+			line-height: 18px
+			vertical-align: top
+
+// search
+.search-wrap
+
+.search-box-wrap
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 120px
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	padding-top: 12px
+	padding-bottom: 13px
+	opacity: 0
+	visibility: hidden
+	z-index: -1
+
+	@include media-breakpoint-up(md)
+		padding-top: 22px
+		padding-bottom: 23px
+
+	.--show-search &
+		z-index: 4
+		opacity: 1
+		visibility: visible
+
+	span
+		position: absolute
+		left: -120px
+		right: 0
+		bottom: -1px
+		display: block
+		height: 1px
+		background-color: #B6BCC3
+		transition: background-color .2s
+
+	.btn-search
+		order: 0
+		margin-right: 5px
+
+	.btn-close
+		order: 2
+		margin-left: 5px
+
+	input[type=text]
+		flex: 1
+		order: 1
+		width: 100%
+		max-width: calc(100% - 42px)
+
+		.header--blur &
+			color: #fff
+
+	input[type=text]:focus ~ .btn-search
+		color: #FE6B00
+
+	input[type=text]:focus ~ span
+		background-color: #FE6B00
+
+.btn-search
+	display: block
+	width: 16px
+	height: 16px
+	color: #333
+	transition: color .2s
+	vertical-align: top
+
+	.header--blur &
+		color: #fff
+
+	i
+		width: 16px
+		height: 16px
+		font-size: 16px
+		line-height: 16px
+		vertical-align: top
+
+	&:hover
+		color: #FE6B00
+		text-decoration: none
+
+.--show-search .js-open-search
+	opacity: 0
+	visibility: hidden
+
+.btn-close
+	display: block
+	width: 16px
+	height: 16px
+	color: #333
+	transition: color .2s
+	vertical-align: top
+
+	.header--blur &
+		color: #fff
+
+	i
+		width: 16px
+		height: 16px
+		font-size: 16px
+		line-height: 16px
+		vertical-align: top
+
+	&:hover
+		color: #FE6B00
+		text-decoration: none
+
+.btn-menu
+	position: relative
+	width: 20px
+	height: 13px
+	margin-left: 30px
+	vertical-align: top
+
+	.--show-search &
+		opacity: 0
+		visibility: hidden
+
+	@include media-breakpoint-up(xl)
+		display: none
+
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		display: block
+		height: 1px
+		background-color: #333
+		transition: top .2s, transform .2s, background-color .2s
+
+		.header--blur &
+			background-color: #fff
+
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		display: block
+		height: 1px
+		background-color: #333
+		transition: top .2s, transform .2s, background-color .2s
+
+		.header--blur &
+			background-color: #fff
+
+	span
+		position: absolute
+		top: 50%
+		left: 3px
+		right: 3px
+		display: block
+		height: 1px
+		margin-top: -0.5px
+		background-color: #333
+		opacity: 1
+		visibility: visible
+		transition: opacity .1s, background-color .2s, left .3s, right .3s
+
+		.header--blur &
+			background-color: #fff
+
+	&:hover
+		&::after,
+		&::before,
+		span
+			background-color: #FE6B00
+
+		span
+			left: 0
+			right: 0
+
+	&.active
+		&::after
+			top: 50%
+			margin-top: -.5px
+			transform: rotate(45deg)
+			background-color: #FE6B00
+
+		&::before
+			bottom: 50%
+			margin-bottom: -.5px
+			transform: rotate(-45deg)
+			background-color: #FE6B00
+
+		span
+			opacity: 0
+			visibility: hidden

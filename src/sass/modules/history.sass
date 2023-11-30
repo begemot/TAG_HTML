@@ -1,0 +1,82 @@
+.history
+
+	&__list
+		margin-top: 40px
+		
+		@include media-breakpoint-up(sm)
+			@include make-row()
+			margin-left: -10px
+			margin-right: -10px
+
+	&__item
+		display: flex
+		flex-direction: column-reverse
+		justify-content: flex-end
+		margin-bottom: 30px
+
+		@include media-breakpoint-up(sm)
+			@include make-col(1, 2)
+			padding-left: 10px
+			padding-right: 10px
+
+		@include media-breakpoint-up(md)
+			@include make-col(1, 3)
+
+		@include media-breakpoint-up(lg)
+			@include make-col(1, 4)
+
+		@include media-breakpoint-up(xl)
+			@include make-col(1, 5)
+
+		&__title
+			position: relative
+			margin-bottom: 0
+			font-size: 16px
+			line-height: 18px
+
+			&:first-child
+				margin-top: 10px
+
+			a
+				display: block
+				color: #333
+				transition: color .2s
+
+				&::before
+					content: ''
+					position: absolute
+					bottom: 100%
+					left: 0
+					right: 0
+					z-index: 5
+					display: block
+					margin-bottom: 10px
+					padding-top: (160/265)*100%
+
+			&:hover
+				a
+					color: #FE6B00
+					text-decoration: none
+
+				& + .news__item__image img
+					transform: scale(1.1)
+
+		&__image
+			position: relative
+			overflow: hidden
+
+			&::before
+				content: ''
+				position: relative
+				z-index: 1
+				display: block
+				padding-top: (160/265)*100%
+
+			img
+				position: absolute
+				left: 0
+				bottom: 0
+				z-index: 2
+				display: block
+				width: 100%
+				transition: transform .2s

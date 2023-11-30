@@ -1,0 +1,169 @@
+.auto
+	&.--no-show
+		display: none
+
+		@include media-breakpoint-up(md)
+			display: block
+
+			.auto__list--hidden-auto &
+				display: none
+
+	&__list
+		@include make-row()
+
+		@include media-breakpoint-up(sm)
+			margin-left: -10px
+			margin-right: -10px
+
+	position: relative
+	@include make-col(1, 1)
+	margin-top: 20px
+	padding-left: 15px
+	padding-right: 15px
+
+	@include media-breakpoint-up(sm)
+		@include make-col(1, 2)
+		margin-top: 40px
+		padding-left: 10px
+		padding-right: 10px
+
+	@include media-breakpoint-up(md)
+		@include make-col(1, 3)
+
+	@include media-breakpoint-up(lg)
+		@include make-col(1, 4)
+
+	@include media-breakpoint-up(xl)
+		@include make-col(1, 5)
+
+	&__picture
+		position: relative
+		margin-bottom: 20px
+
+		img
+			display: block
+			width: 100%
+			max-width: 100%
+			height: auto
+			border-radius: 2px
+
+		&__state
+			position: absolute
+			right: -5px
+			bottom: -6px
+			z-index: 2
+			display: inline-block
+			padding: 2px 6px
+			color: #fff
+			font-size: 12px
+			line-height: 15px
+			text-transform: uppercase
+			border-radius: 1px
+			background-color: #FE6B00
+
+			.auto--reserve &
+				background-color: #2F80ED
+
+			.auto--discount &
+				background-color: #EE3333
+
+	&__title
+		position: relative
+		margin-top: 20px
+		margin-bottom: 16px
+		@include title-font
+		font-size: 16px
+		line-height: 18px
+
+		a
+			display: inline-block
+			color: #333
+			transition: color .15s
+
+			&::before
+				content: ''
+				position: absolute
+				bottom: 38px
+				left: 0
+				right: 0
+				z-index: 4
+				display: block
+				padding-top: (140/220)*100%
+
+			&:hover
+				color: #FE6B00
+				text-decoration: none
+
+
+	&__text
+		margin-top: 16px
+		margin-bottom: 14px
+		font-size: 12px
+		line-height: 16px
+
+	&__price
+		display: block
+		position: relative
+		padding-top: 13px
+		color: #979FA8
+		font-size: 14px
+		line-height: 14px
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			display: block
+			height: 1px
+			background-color: rgba(#B6BCC3, .5)
+
+		b
+			color: #333
+			font-weight: 700
+
+	&__footer
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding-top: 40px
+
+		.js-auto-product-add
+			width: 230px
+
+		.link-more
+			color: #333
+			margin-top: 30px
+			margin-bottom: 30px
+
+		@include media-breakpoint-up(md)
+			flex-direction: row
+			justify-content: space-between
+
+			.link-more
+				margin-top: 0
+				margin-bottom: 0
+				margin-left: auto
+
+		@include media-breakpoint-up(lg)
+			.js-auto-product-add
+				margin-left: 50%
+				transform: translateX(-50%)
+
+.js-auto-product-add
+	display: none
+
+	&.--show
+		display: block
+
+.js-auto-add
+	display: none
+	width: 230px
+	margin: 40px auto 0
+
+	&.--show
+		display: block
+
+		@include media-breakpoint-up(md)
+			display: none

@@ -1,0 +1,47 @@
+// tags
+.tag
+	& + &
+		margin-top: 20px
+
+	&__text
+		display: block
+		margin-bottom: 8px
+		font-size: 12px
+		line-height: 16px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 0
+		padding: 0
+		list-style: none
+
+		li
+			margin-right: 10px
+			margin-bottom: 10px
+
+			&:last-child
+				margin-right: 0
+
+		span,
+		a
+			display: inline-block
+			padding: 3px 7px
+			color: #333
+			font-size: 14px
+			line-height: 16px
+			border: 0.5px solid #FE6B00
+			border-radius: 1px
+			background-color: transparent
+			transition: color .2s, background-color .2s
+
+			&:hover
+				color: #fff
+				text-decoration: none
+				background-color: #FE6B00
+
+		.current
+			span,
+			a
+				color: #fff
+				background-color: #FE6B00
