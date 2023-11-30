@@ -24,4 +24,5 @@ import './components/content-gallery-slider'
 import './components/blog-slider'
 import './components/auto-item'
 import './components/catalog'
+import './components/form'
 //123

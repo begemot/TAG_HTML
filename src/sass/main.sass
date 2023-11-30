@@ -77,13 +77,17 @@ $border-lighter				: #EBEEF5
 		src: $src
 
 // Montserrat:
-@include font-face('Montserrat', "../fonts/Montserrat/Montserrat-Regular", 400, normal, woff2 woff);
-@include font-face('Montserrat', "../fonts/Montserrat/Montserrat-Medium", 500, normal, woff2 woff);
-@include font-face('Montserrat', "../fonts/Montserrat/Montserrat-SemiBold", 600, normal, woff2 woff);
-@include font-face('Montserrat', "../fonts/Montserrat/Montserrat-Bold", 700, normal, woff2 woff);
+@include font-face('Montserrat', "../fonts/Montserrat/Montserrat-Regular", 400, normal, woff2 woff)
+@include font-face('Montserrat', "../fonts/Montserrat/Montserrat-Medium", 500, normal, woff2 woff)
+@include font-face('Montserrat', "../fonts/Montserrat/Montserrat-SemiBold", 600, normal, woff2 woff)
+@include font-face('Montserrat', "../fonts/Montserrat/Montserrat-Bold", 700, normal, woff2 woff)
 
 // Roboto Condensed:
 @include font-face('Roboto Condensed', "../fonts/RobotoCondensed/RobotoCondensed-BoldItalic", 700, italic, woff2 woff)
+
+// Proxima Nova Condensed:
+@include font-face('ProximaNovaCondensed', "../fonts/ProximaNovaCondensed/proximanovacond_bold", 700, normal, woff woff2)
+@include font-face('ProximaNovaCondensed', "../fonts/ProximaNovaCondensed/proximanovacond_regular", 400, normal, woff woff2)
 
 // GENERAL DOCUMENT STYLES
 *,
@@ -894,6 +898,7 @@ a
 @import 'modules/feedback'
 @import 'modules/contacts'
 @import 'modules/mobile-navigation'
+@import 'modules/form'
 
 
 // Helpers
@@ -943,3 +948,15 @@ a
 	margin-bottom: 20px
 	height: 1px
 	background-color: #B6BCC3
+
+.modal-content,.modal-content_page
+	padding: 30px
+
+.h3-upper
+	font-size: 20px
+	font-weight: 900
+	text-transform: uppercase
+	font-family: "Roboto"
+	margin-bottom: 1em
+	line-height: 1.2em
+	padding-right: 40px

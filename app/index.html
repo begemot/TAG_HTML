@@ -31,219 +31,567 @@
 	<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
 
 	<!-- build:css -->
-	<link rel="stylesheet" href="assets/css/main.min.css?t=1680099292954">
+	<link rel="stylesheet" href="assets/css/main.css">
 	<!-- endbuild -->
+
+
+
+
+
+
 
 </head>
 <body>
-	<section class="hero">
-		<header class="hero-header header-wrap header--blur">
-			<div class="container">
-				<div class="header">
-					<a href="#" class="logo">
-						<img src="assets/img/Logo-white.svg" alt="">
-					</a>
+		<section class="hero">
+			<header class="hero-header header-wrap header--blur">
+				<div class="container">
+					<div class="header">
+						<a href="#" class="logo">
+							<img src="assets/img/Logo-white.svg" alt="">
+						</a>
 
-					<ul class="navigation">
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Авто в наличии</a></li>
-						<li>
-							<a class="submenu__link" href="#">
-								Услуги
-								<i class="demo-icon icon-arrow-menu-down"></i>
+						<ul class="navigation">
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Авто в наличии</a></li>
+							<li>
+								<a class="submenu__link" href="#">
+									Услуги
+									<i class="demo-icon icon-arrow-menu-down"></i>
+								</a>
+								<button type="button" class="btn-submenu-open">
+									<i class="demo-icon icon-arrow-menu-down"></i>
+								</button>
+								<ul class="submenu">
+									<li><a href="#">link 1</a></li>
+									<li><a href="#">link 2</a></li>
+									<li><a href="#">link 3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Схема поставки</a></li>
+							<li><a href="#">Лизинг</a></li>
+						</ul>
+
+						<div class="header__contacts">
+							<a href="tel:+78123593633" class="header__contacts__phone">+7 (812) 359-36-33</a>
+							<a href="viber://chat?number=+78123593633" class="header__contacts__viber">
+								<i class="demo-icon icon-phone"></i>
 							</a>
-							<button type="button" class="btn-submenu-open">
-								<i class="demo-icon icon-arrow-menu-down"></i>
-							</button>
-							<ul class="submenu">
-								<li><a href="#">link 1</a></li>
-								<li><a href="#">link 2</a></li>
-								<li><a href="#">link 3</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Схема поставки</a></li>
-						<li><a href="#">Лизинг</a></li>
-					</ul>
-
-					<div class="header__contacts">
-						<a href="tel:+78123593633" class="header__contacts__phone">+7 (812) 359-36-33</a>
-						<a href="viber://chat?number=+78123593633" class="header__contacts__viber">
-							<i class="demo-icon icon-phone"></i>
-						</a>
-						<a href="whatsapp://send?phone=78123593633" class="header__contacts__whatsapp">
-							<i class="demo-icon icon-whatsapp"></i>
-						</a>
-						<div class="search-wrap">
-							<button class="btn-search js-open-search" type="button">
-								<i class="demo-icon icon-search"></i>
-							</button>
-							<form class="search-box-wrap">
-								<input type="text" placeholder="Поиск">
-								<button type="submit" class="btn-search">
+							<a href="whatsapp://send?phone=78123593633" class="header__contacts__whatsapp">
+								<i class="demo-icon icon-whatsapp"></i>
+							</a>
+							<div class="search-wrap">
+								<button class="btn-search js-open-search" type="button">
 									<i class="demo-icon icon-search"></i>
 								</button>
-								<button type="button" class="btn-close js-close-search">
-									<i class="demo-icon icon-close"></i>
-								</button>
-							</form>
+								<form class="search-box-wrap">
+									<input type="text" placeholder="Поиск">
+									<button type="submit" class="btn-search">
+										<i class="demo-icon icon-search"></i>
+									</button>
+									<button type="button" class="btn-close js-close-search">
+										<i class="demo-icon icon-close"></i>
+									</button>
+								</form>
+							</div>
+							<button class="btn-menu" type="button" data-toggle="modal" data-target="#modal-nav">
+								<span></span>
+							</button>
 						</div>
-						<button class="btn-menu" type="button" data-toggle="modal" data-target="#modal-nav">
-							<span></span>
+					</div>
+				</div>
+			</header>
+			<div class="hero-slider">
+				<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger.jpg')"> &nbsp; </div>
+				<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-2.jpg')"> &nbsp; </div>
+				<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-3.jpg')"> &nbsp; </div>
+				<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-4.jpg')"> &nbsp; </div>
+				<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-5.jpg')"> &nbsp; </div>
+				<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-6.jpg')"> &nbsp; </div>
+			</div>
+			<div class="hero-content">
+				<button class="modal-open" type="button">Оставить заявку на автомобиль</button>
+				<div class="hero-content__slider">
+					<div class="preview-auto">
+						<span class="preview-auto__category">Спорткары</span>
+						<h2 class="preview-auto__name">
+							<span>DODGE CHALLENGER</span><br>
+							50th ANNIVERSARY<br>
+							EDITION
+						</h2>
+						
+						<a href="#" class="link-more">
+							Подробнее
+							<i class="demo-icon icon-arrow-more"></i>
+						</a>
+					</div>
+					<div class="preview-auto">
+						<span class="preview-auto__category">Спорткары2</span>
+						<h2 class="preview-auto__name">
+							<span>DODGE CHALLENGER</span><br>
+							50th ANNIVERSARY<br>
+							EDITION
+						</h2>
+						
+						<a href="#" class="link-more">
+							Подробнее
+							<i class="demo-icon icon-arrow-more"></i>
+						</a>
+					</div>
+					<div class="preview-auto">
+						<span class="preview-auto__category">Спорткары3</span>
+						<h2 class="preview-auto__name">
+							<span>DODGE CHALLENGER</span><br>
+							50th ANNIVERSARY<br>
+							EDITION
+						</h2>
+						
+						<a href="#" class="link-more">
+							Подробнее
+							<i class="demo-icon icon-arrow-more"></i>
+						</a>
+					</div>
+					<div class="preview-auto">
+						<span class="preview-auto__category">Спорткары4</span>
+						<h2 class="preview-auto__name">
+							<span>DODGE CHALLENGER</span><br>
+							50th ANNIVERSARY<br>
+							EDITION
+						</h2>
+						
+						<a href="#" class="link-more">
+							Подробнее
+							<i class="demo-icon icon-arrow-more"></i>
+						</a>
+					</div>
+					<div class="preview-auto">
+						<span class="preview-auto__category">Спорткары5</span>
+						<h2 class="preview-auto__name">
+							<span>DODGE CHALLENGER</span><br>
+							50th ANNIVERSARY<br>
+							EDITION
+						</h2>
+						
+						<a href="#" class="link-more">
+							Подробнее
+							<i class="demo-icon icon-arrow-more"></i>
+						</a>
+					</div>
+					<div class="preview-auto">
+						<span class="preview-auto__category">Спорткары6</span>
+						<h2 class="preview-auto__name">
+							<span>DODGE CHALLENGER</span><br>
+							50th ANNIVERSARY<br>
+							EDITION
+						</h2>
+						
+						<a href="#" class="link-more">
+							Подробнее
+							<i class="demo-icon icon-arrow-more"></i>
+						</a>
+					</div>
+				</div>
+				<div class="hero-content__arrows">
+					<button class="hero-content__arrows--prev js-hero-slider--prev" aria-label="Previous" type="button">
+						<i class="demo-icon icon-arrow-left"></i>
+						<i class="demo-icon icon-slope-square-lg"></i>
+					</button>
+					<button class="hero-content__arrows--next js-hero-slider--next" aria-label="Next" type="button">
+						<i class="demo-icon icon-arrow-right"></i>
+						<i class="demo-icon icon-slope-square-lg"></i>
+					</button>
+				</div>
+				<div class="hero-content__dots"></div>
+			</div>
+		</section>
+
+		<!-- BEGIN Mobile Navigation -->
+		<div id="modal-nav" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-nav__dialog" role="document">
+						<div class="modal-nav__header">
+							<button type="button" class="modal-nav__btn-close" data-dismiss="modal" aria-label="Close">
+								<i class="demo-icon icon-close"></i>
+							</button>
+						</div>
+						<div class="modal-nav__content">
+							<ul class="modal-nav__content__list">
+								<li><a class="active" href="#">О компании</a></li>
+								<li><a href="#">История продаж</a></li>
+								<li><a href="#">Новости и публикации</a></li>
+								<li><a href="#">Видео</a></li>
+								<li><a href="#">Партнёры</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Помощь</a></li>
+							</ul>
+						</div>
+						<div class="modal-nav__footer">
+							<ul class="footer-social">
+								<li>
+									<a class="footer-social__link footer-social__link--instagramm" href="#">
+										<i class="demo-icon icon-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a class="footer-social__link footer-social__link--youtube" href="#">
+										<i class="demo-icon icon-youtube"></i>
+									</a>
+								</li>
+							</ul>
+							<p class="copy">&copy; Trans Auto Group. 2008 — 2020</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="myModal">
+			<div class="modal-dialog-centered">
+				<div class="modal-content model-margin">
+					<div>
+						<div class="d-flex justify-content-between align-items-start">
+							<div class="form-h3-upper-style">Выберите необходимую вам комплектацию</div>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" class="close-x">&times;</span>
+							</button>
+						</div>
+						<div class="d-flex justify-content-between wrapper__form">
+							<div class="card-car__modal" data-action="Standard">
+								<img src="assets/img/form/1.jpg" alt="car image" class="image__card-car img-fluid">
+								<div class="infoblock__modal">
+									<div class="text-info">
+										<span class="title__card-car">Standard</span><br>
+										<span class="info__card-car">
+											<span class="text__info__card-car">двигатель:</span><br>
+											1.5 L4 Turbocharged DOHC VTEC® Бензин<br>
+											<span class="text__info__card-car">привод:</span><br>
+											Передний<br>
+											<span class="text__info__card-car">коробка передач:</span><br>
+											Автоматическая, ECVT<br>
+											&#8203;
+										</span>
+										<hr class="hr__form">
+										<div class="flex-center">
+											<span class="price-r"><strong>от 6&nbsp;580&nbsp;000 р.</strong></span>
+											<span class="price-d">72&nbsp;090 $</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-car__modal" data-action="A-Spec">
+								<img src="assets/img/form/2.jpg" alt="car image" class="image__card-car img-fluid">
+								<div class="infoblock__modal">
+									<div class="text-info">
+										<span class="title__card-car">A-Spec</span><br>
+										<span class="info__card-car">
+											<span class="text__info__card-car">двигатель:</span><br>
+											1.5 L4 Turbocharged DOHC VTEC® Бензин<br>
+											<span class="text__info__card-car">привод:</span><br>
+											Передний <br>
+											<span class="text__info__card-car">коробка передач:</span><br>
+											Автоматическая, ECVT<br>
+											&#8203;
+										</span>
+										<hr class="hr__form">
+										<div class="flex-center">
+											<span class="price-r"><strong>от 6&nbsp;850&nbsp;000 р.</strong></span>
+											<span class="price-d">75&nbsp;030 $</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-car__modal" data-action="A-Spec Technology">
+								<img src="assets/img/form/3.jpg" alt="car image" class="image__card-car img-fluid">
+								<div class="infoblock__modal">
+									<div class="text-info">
+										<span class="title__card-car">A-Spec Technology</span><br>
+										<span class="info__card-car">
+											<span class="text__info__card-car">двигатель:</span><br>
+											1.5 L4 Turbocharged DOHC VTEC® Бензин<br>
+											<span class="text__info__card-car">привод:</span><br>
+											Передний <br>
+											<span class="text__info__card-car">коробка передач:</span><br>
+											Механическая 6 ст.<br>
+											Автоматическая, ECVT
+										</span>
+										<hr class="hr__form">
+										<div class="flex-center">
+											<span class="price-r"><strong>от 7&nbsp;390&nbsp;000 р.</strong></span>
+											<span class="price-d">80&nbsp;920 $</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="modal__page novisible" id="myModal__page">
+			<div class="modal-dialog-centered modal-dialog-centered_page">
+				<div class="modal-content modal-content_page">
+					<div>
+						<div class="d-flex justify-content-between align-items-start padding__modal-title">
+							<div>
+								<button class="btn__prw">&#8592; Назад</button>
+								<div class="form-h3-upper-style">Определитесь с цветовым оттенком и характеристиками</div>
+							</div>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" class="close-x__page">&times;</span>
+							</button>
+						</div>
+						<div class="d-flex">
+							<div class="simplebar-content">
+								<div class="info__simplebar-content">
+									<p class="tag__simplebar-content"><strong>Цвет кузова:</strong></p>
+									<div class="d-flex circle-list">
+										<div class="circle circle-white circle-activ" data-color="white">
+	
+										</div>
+										<div class="circle circle-metalic" data-color="metalic">
+	
+										</div>
+										<div class="circle circle-black" data-color="black">
+	
+										</div>
+										<div class="circle circle-red" data-color="red">
+	
+										</div>
+										<div class="circle circle-blue" data-color="blue">
+	
+										</div>
+										<div class="circle circle-carbon-metalic" data-color="carbon-metalic">
+	
+										</div>
+									</div>
+								</div>
+								<div class="info__simplebar-content">
+									<p class="tag__simplebar-content"><strong>Двигатель:</strong></p>
+									<div class="if-box">
+										<div class="yellow-box">
+											<span class="text__simplebar-content"><strong>1.5 L4 Turbocharged DOHC VTEC® Бензин 200 л.с.</strong></span>
+										</div>
+										<div class="chekbox">
+											<p></p>
+											<p></p>
+										</div>
+									</div>
+								</div>
+								<div class="info__simplebar-content">
+									<p class="tag__simplebar-content"><strong>Коробка передач:</strong></p>
+									<div class="if-box">
+										<div class="yellow-box yellow-box-auto">
+											<span class="text__simplebar-content"><strong>Автоматическая</strong></span>
+										</div>
+										<div class="chekbox">
+											<div class="form-check" data-form="1">
+												<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" data-form="1">
+												<label class="form-check-label" for="exampleRadios1" data-form="1">
+												  Автоматическая
+												</label>
+											</div>
+											<div class="form-check" data-form="2">
+												<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" data-form="2">
+												<label class="form-check-label" for="exampleRadios2" data-form="2">
+												  Механическая
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info__simplebar-content">
+									<p class="tag__simplebar-content"><strong>Привод:</strong></p>
+									<div class="if-box">
+										<div class="yellow-box">
+											<span class="text__simplebar-content"><strong>Передний</strong></span>
+										</div>
+										<div class="chekbox">
+	
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-display">
+								<div class="name"><strong>Acura Integra <span class="comlpectation-name"></span> - <span class="color-name">Platinum White Pearl</span></strong></div>
+								<img class="car-color-image" src="assets/img/form/color-car/white.jpg" alt="car-image">
+								<div class="d-flex justify-content-between">
+									<div class="price-list">
+										<span class="text__price-list">цена от:</span><br>
+										<span class="price__price-list">6 580 000 руб.</span><br>
+										<span class="text__price-list">по б/н расчету от: 6 910 000<span></span> руб.</span>
+									</div>
+									<div class="button-list">
+										<button class="btn__main-display">Применить</button>
+										<p class="description__btn__main-display">Кнопка станет доступна после выбора параметров в фильтре слева</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="modal modal__page_mobile novisible" id="myModal__page_mobile">
+			<div class="modal-dialog-centered modal-dialog-centered_page_mobile">
+				<div class="modal-content modal-content_page_mobile">
+					<div>
+						<div class="d-flex justify-content-between align-items-start padding__modal-title">
+							<div>
+								<button class="btn__prw">&#8592; Назад</button>
+								<div class="form-h3-upper-style">Определитесь с цветовым оттенком и характеристиками</div>
+							</div>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" class="close-x__page_mobile">&times;</span>
+							</button>
+						</div>
+						<img class="car-color-image" src="assets/img/form/color-car/white.jpg" alt="car-image">
+						<div class="simplebar-content simplebar-content_page_mobile">
+							<div class="info__simplebar-content">
+								<p class="tag__simplebar-content"><strong>Цвет кузова:</strong></p>
+								<div class="d-flex circle-list">
+									<div class="circle circle-white circle-activ" data-color="white">
+
+									</div>
+									<div class="circle circle-metalic" data-color="metalic">
+
+									</div>
+									<div class="circle circle-black" data-color="black">
+
+									</div>
+									<div class="circle circle-red" data-color="red">
+
+									</div>
+									<div class="circle circle-blue" data-color="blue">
+
+									</div>
+									<div class="circle circle-carbon-metalic" data-color="carbon-metalic">
+
+									</div>
+								</div>
+								<div class="info__simplebar-content">
+									<p class="tag__simplebar-content"><strong>Двигатель:</strong></p>
+									<div class="if-box">
+										<div class="yellow-box">
+											<span class="text__simplebar-content"><strong>1.5 L4 Turbocharged DOHC VTEC® Бензин 200 л.с.</strong></span>
+										</div>
+										<div class="chekbox">
+
+										</div>
+									</div>
+								</div>
+								<div class="info__simplebar-content">
+									<p class="tag__simplebar-content"><strong>Коробка передач:</strong></p>
+									<div class="if-box">
+										<div class="yellow-box yellow-box-auto">
+											<span class="text__simplebar-content"><strong>Автоматическая</strong></span>
+										</div>
+										<div class="chekbox">
+											<div class="form-check" data-form="3">
+												<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" data-form="3">
+												<label class="form-check-label" for="exampleRadios3" data-form="3">
+												  Автоматическая
+												</label>
+											</div>
+											<div class="form-check" data-form="4">
+												<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" data-form="4">
+												<label class="form-check-label" for="exampleRadios4" data-form="4">
+												  Механическая
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info__simplebar-content">
+									<p class="tag__simplebar-content"><strong>Привод:</strong></p>
+									<div class="if-box">
+										<div class="yellow-box">
+											<span class="text__simplebar-content"><strong>Передний</strong></span>
+										</div>
+										<div class="chekbox">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-between price-button">
+							<div class="price-list">
+								<span class="text__price-list">цена от:</span><br>
+								<span class="price__price-list">6 850 000 руб.</span><br>
+								<span class="text__price-list">по б/н расчету от: <span>7 190 000</span> руб.</span>
+							</div>
+							<div class="button-list">
+								<button class="btn__main-display">Применить</button>
+								<p class="description__btn__main-display">Кнопка станет доступна после выбора параметров в фильтре слева</p>
+							</div>
+						</div>	
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="form__myModal" class="form_myModal">
+			<div class="modal-dialog-centered">
+				<div class="modal-content form-color">
+					<div class="d-flex justify-content-between align-items-start padding__modal-title">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" class="close-x__form">&times;</span>
 						</button>
 					</div>
-				</div>
-			</div>
-		</header>
-		<div class="hero-slider">
-			<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger.jpg')"> &nbsp; </div>
-			<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-2.jpg')"> &nbsp; </div>
-			<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-3.jpg')"> &nbsp; </div>
-			<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-4.jpg')"> &nbsp; </div>
-			<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-5.jpg')"> &nbsp; </div>
-			<div class="hero-slider__item" style="background-image: url('assets/img/hero-slider/dodge-challenger-6.jpg')"> &nbsp; </div>
-		</div>
-		<div class="hero-content">
-			<div class="hero-content__slider">
-				<div class="preview-auto">
-					<span class="preview-auto__category">Спорткары</span>
-					<h2 class="preview-auto__name">
-						<span>DODGE CHALLENGER</span><br>
-						50th ANNIVERSARY<br>
-						EDITION
-					</h2>
-					
-					<a href="#" class="link-more">
-						Подробнее
-						<i class="demo-icon icon-arrow-more"></i>
-					</a>
-				</div>
-				<div class="preview-auto">
-					<span class="preview-auto__category">Спорткары2</span>
-					<h2 class="preview-auto__name">
-						<span>DODGE CHALLENGER</span><br>
-						50th ANNIVERSARY<br>
-						EDITION
-					</h2>
-					
-					<a href="#" class="link-more">
-						Подробнее
-						<i class="demo-icon icon-arrow-more"></i>
-					</a>
-				</div>
-				<div class="preview-auto">
-					<span class="preview-auto__category">Спорткары3</span>
-					<h2 class="preview-auto__name">
-						<span>DODGE CHALLENGER</span><br>
-						50th ANNIVERSARY<br>
-						EDITION
-					</h2>
-					
-					<a href="#" class="link-more">
-						Подробнее
-						<i class="demo-icon icon-arrow-more"></i>
-					</a>
-				</div>
-				<div class="preview-auto">
-					<span class="preview-auto__category">Спорткары4</span>
-					<h2 class="preview-auto__name">
-						<span>DODGE CHALLENGER</span><br>
-						50th ANNIVERSARY<br>
-						EDITION
-					</h2>
-					
-					<a href="#" class="link-more">
-						Подробнее
-						<i class="demo-icon icon-arrow-more"></i>
-					</a>
-				</div>
-				<div class="preview-auto">
-					<span class="preview-auto__category">Спорткары5</span>
-					<h2 class="preview-auto__name">
-						<span>DODGE CHALLENGER</span><br>
-						50th ANNIVERSARY<br>
-						EDITION
-					</h2>
-					
-					<a href="#" class="link-more">
-						Подробнее
-						<i class="demo-icon icon-arrow-more"></i>
-					</a>
-				</div>
-				<div class="preview-auto">
-					<span class="preview-auto__category">Спорткары6</span>
-					<h2 class="preview-auto__name">
-						<span>DODGE CHALLENGER</span><br>
-						50th ANNIVERSARY<br>
-						EDITION
-					</h2>
-					
-					<a href="#" class="link-more">
-						Подробнее
-						<i class="demo-icon icon-arrow-more"></i>
-					</a>
-				</div>
-			</div>
-			<div class="hero-content__arrows">
-				<button class="hero-content__arrows--prev js-hero-slider--prev" aria-label="Previous" type="button">
-					<i class="demo-icon icon-arrow-left"></i>
-					<i class="demo-icon icon-slope-square-lg"></i>
-				</button>
-				<button class="hero-content__arrows--next js-hero-slider--next" aria-label="Next" type="button">
-					<i class="demo-icon icon-arrow-right"></i>
-					<i class="demo-icon icon-slope-square-lg"></i>
-				</button>
-			</div>
-			<div class="hero-content__dots"></div>
-		</div>
-	</section>
-
-	<!-- BEGIN Mobile Navigation -->
-	<div id="modal-nav" class="modal fade" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-nav__dialog" role="document">
-					<div class="modal-nav__header">
-						<button type="button" class="modal-nav__btn-close" data-dismiss="modal" aria-label="Close">
-							<i class="demo-icon icon-close"></i>
-						</button>
+					<div class="form-h3-upper-style color-text__form">Оставить заявку на автомобиль</div>
+					<p class="desc__form color-text__form color-text__form_desc">Заполните, пожалуйста, форму. <br>Коммерческое предложение будет отправлено на Ваш e-mail</p>
+					<div class="d-flex">
+						<input type="checkbox" id="chekbox__form">
+						<label for="chekbox__form color-text__form" class="chekbox__form__label">В лизинг</label>
 					</div>
-					<div class="modal-nav__content">
-						<ul class="modal-nav__content__list">
-							<li><a class="active" href="#">О компании</a></li>
-							<li><a href="#">История продаж</a></li>
-							<li><a href="#">Новости и публикации</a></li>
-							<li><a href="#">Видео</a></li>
-							<li><a href="#">Партнёры</a></li>
-							<li><a href="#">Контакты</a></li>
-							<li><a href="#">Помощь</a></li>
-						</ul>
+					<div class="form_group_nodisplay">
+						<div class="form-group"> 
+							<label for="id_email" class="control-label color-text__form color-text__form_title">Ваша компания</label>
+								<div class="controls ">
+									<input type="email" name="company" maxlength="320" required="" id="id_email">
+								</div>
+						</div>
+						<div class="form-group"> 
+							<label for="id_email" class="control-label color-text__form color-text__form_title">ИНН</label>
+								<div class="controls ">
+									<input type="email" name="INN" maxlength="320" required="" id="id_email">
+								</div>
+						</div>
 					</div>
-					<div class="modal-nav__footer">
-						<ul class="footer-social">
-							<li>
-								<a class="footer-social__link footer-social__link--instagramm" href="#">
-									<i class="demo-icon icon-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a class="footer-social__link footer-social__link--youtube" href="#">
-									<i class="demo-icon icon-youtube"></i>
-								</a>
-							</li>
-						</ul>
-						<p class="copy">&copy; Trans Auto Group. 2008 — 2020</p>
+					<div class="form-group"> 
+						<label for="id_email" class="control-label color-text__form color-text__form_title">Ваш e-mail</label>
+							<div class="controls ">
+								<input type="email" name="email" placeholder="youmail@mail.ru" maxlength="320" required="" id="id_email">
+							</div>
 					</div>
-				</div>
+					<div class="form-group"> 
+						<label for="id_email" class="control-label color-text__form color-text__form_title">Телефон</label>
+							<div class="controls ">
+								<input type="email" name="phone" placeholder="+_ (___) ___-__-__" maxlength="320" required="" id="id_email">
+							</div>
+					</div>
+					<div class="form-group"> 
+						<label for="id_email" class="control-label color-text__form color-text__form_title">Ваше имя</label>
+							<div class="controls ">
+								<input type="email" name="name" placeholder="Ваше имя" maxlength="320" required="" id="id_email">
+							</div>
+					</div>
+					<button class="button_form">Отправить</button>
+					<div class="termsofuse color-text__form">Заполняя данную контактную форму, вы даете согласие на <a href="#" target="_blank" class="link__form">обработку своих персональных данных</a></div>
+				</div>	
 			</div>
 		</div>
-	</div>
-	<!-- END Mobile Navigation -->
+		
+		<!-- END Mobile Navigation -->
 
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-	<!-- build:js -->
-	<script src="assets/js/app.js?t=1680099292954"></script>
-	<!-- endbuild -->
+		<!-- build:js -->
+		<script src="assets/js/app.js"></script>
+		<!-- endbuild -->
 
+
+
+
+
+	<div class="overlay"></div>
 </body>
 </html>
