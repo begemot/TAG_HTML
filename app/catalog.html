@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Trans Auto Group</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/css/main.min.css?t=1680099292858">
+    <!-- endbuild -->
+
+
+
+</head>
+<body>
+<header class="header-wrap">
+    <div class="container --hr">
+        <div class="header">
+            <a href="#" class="logo">
+                <img src="assets/img/Logo.svg" alt="">
+            </a>
+
+            <ul class="navigation">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Авто в наличии</a></li>
+                <li>
+                    <a class="submenu__link" href="#">
+                        Услуги
+                        <i class="demo-icon icon-arrow-menu-down"></i>
+                    </a>
+                    <button type="button" class="btn-submenu-open">
+                        <i class="demo-icon icon-arrow-menu-down"></i>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="#">link 1</a></li>
+                        <li><a href="#">link 2</a></li>
+                        <li><a href="#">link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Схема поставки</a></li>
+                <li><a href="#">Лизинг</a></li>
+            </ul>
+
+            <div class="header__contacts">
+                <a href="tel:+78123593633" class="header__contacts__phone">+7 (812) 359-36-33</a>
+                <a href="viber://chat?number=+78123593633" class="header__contacts__viber">
+                    <i class="demo-icon icon-phone"></i>
+                </a>
+                <a href="whatsapp://send?phone=78123593633" class="header__contacts__whatsapp">
+                    <i class="demo-icon icon-whatsapp"></i>
+                </a>
+                <div class="search-wrap">
+                    <button class="btn-search js-open-search" type="button">
+                        <i class="demo-icon icon-search"></i>
+                    </button>
+                    <form class="search-box-wrap">
+                        <input type="text" placeholder="Поиск">
+                        <button type="submit" class="btn-search">
+                            <i class="demo-icon icon-search"></i>
+                        </button>
+                        <button type="button" class="btn-close js-close-search">
+                            <i class="demo-icon icon-close"></i>
+                        </button>
+                        <span></span>
+                    </form>
+                </div>
+                <button class="btn-menu" type="button" data-toggle="modal" data-target="#modal-nav">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="catalog">
+    <div class="container">
+        <ul class="select-auto-tab">
+            <li><a class="select-auto-tab__link active" data-index="0" href="#">Все</a></li>
+            <li><a class="select-auto-tab__link" data-index="1" href="#">Пикапы</a></li>
+            <li><a class="select-auto-tab__link" data-index="2" href="#">Внедорожники</a></li>
+            <li><a class="select-auto-tab__link" data-index="3" href="#">Спорткары</a></li>
+            <li><a class="select-auto-tab__link" data-index="4" href="#">Седаны</a></li>
+            <li><a class="select-auto-tab__link" data-index="5" href="#">Минивэны</a></li>
+            <li><a class="select-auto-tab__link" data-index="6" href="#">Автобусы</a></li>
+            <li><a class="select-auto-tab__link" data-index="7" href="#">Электрокары</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="catalog__row">
+            <div class="catalog__sidebar">
+                <button class="catalog__sidebar__filters" type="button">
+                    <i class="demo-icon icon-filters"></i>
+                    <i class="demo-icon icon-filters-close"></i>
+                    <span>Фильтры</span>
+                </button>
+                <form class="catalog__sidebar__form">
+                    <div class="select-auto__wrap">
+                        <span class="select__label">Тип автомобиля</span>
+                        <select class="select-auto">
+                            <option>Все</option>
+                            <option>Пикапы</option>
+                            <option>Внедорожники</option>
+                            <option>Спорткары</option>
+                            <option>Седаны</option>
+                            <option>Минивэны</option>
+                            <option>Автобусы</option>
+                            <option>Электрокары</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span class="select__label">Марка</span>
+                        <select class="select">
+                            <option>Все марки</option>
+                            <option>Все марки2</option>
+                            <option>Все марки3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span class="select__label">Кузов</span>
+                        <select class="select">
+                            <option>Любой</option>
+                            <option>Любой2</option>
+                            <option>Любой3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span class="select__label">Топливо</span>
+                        <select class="select">
+                            <option>Все</option>
+                            <option>Дизель</option>
+                            <option>Бензин</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span class="select__label">Год</span>
+                        <select class="select">
+                            <option>Все года</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                            <option>2017</option>
+                            <option>2016</option>
+                            <option>2015</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="btn-def js-btn-reset-catalog" type="button">Сбросить фильтр</button>
+                    </div>
+                </form>
+
+                <form class="catalog__sidebar__form" style="display: none;">
+
+
+                    <div>
+                        <button class="btn-def js-btn-reset-catalog" type="button">Сбросить фильтр</button>
+                    </div>
+                </form>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog__list">
+                    <div class="catalog__item">
+                        <a href="#" class="card-item">
+								<span class="card-item__picture">
+									<img src="assets/img/catalog-filters/card-1.png"
+                                         srcset="assets/img/catalog-filters/card-1.png 1x, assets/img/catalog-filters/card-1.png 2x"
+                                         alt="">
+								</span>
+                            <span class="card-item__content">
+									<span class="card-item__content__title">Chevrolet Colorado</span>
+									<span class="card-item__content__date">2020</span>
+									<span class="card-item__content__text">Среднеразмерный пикап</span>
+								</span>
+                        </a>
+                    </div>
+                    <div class="catalog__item">
+                        <a href="#" class="card-item">
+								<span class="card-item__picture">
+									<img src="assets/img/catalog-filters/card-2.png"
+                                         srcset="assets/img/catalog-filters/card-2.png 1x, assets/img/catalog-filters/card-2.png 2x"
+                                         alt="">
+								</span>
+                            <span class="card-item__content">
+									<span class="card-item__content__title">Chevrolet Silverado 1500</span>
+									<span class="card-item__content__date">2019</span>
+									<span class="card-item__content__text">Полноразмерный пикап</span>
+								</span>
+                        </a>
+                    </div>
+                    <div class="catalog__item">
+                        <a href="#" class="card-item">
+								<span class="card-item__picture">
+									<img src="assets/img/catalog-filters/card-3.png"
+                                         srcset="assets/img/catalog-filters/card-3.png 1x, assets/img/catalog-filters/card-3.png 2x"
+                                         alt="">
+								</span>
+                            <span class="card-item__content">
+									<span class="card-item__content__title">Chevrolet Silverado 1500</span>
+									<span class="card-item__content__date">2020</span>
+									<span class="card-item__content__text">Полноразмерный пикап</span>
+								</span>
+                        </a>
+                    </div>
+                    <div class="catalog__item">
+                        <a href="#" class="card-item">
+								<span class="card-item__picture">
+									<img src="assets/img/catalog-filters/card-4.png"
+                                         srcset="assets/img/catalog-filters/card-4.png 1x, assets/img/catalog-filters/card-4.png 2x"
+                                         alt="">
+								</span>
+                            <span class="card-item__content">
+									<span class="card-item__content__title">Chevrolet Silverado 3500</span>
+									<span class="card-item__content__date">2020</span>
+									<span class="card-item__content__text">Тяжёлый пикап</span>
+								</span>
+                        </a>
+                    </div>
+                    <div class="catalog__item">
+                        <a href="#" class="card-item">
+								<span class="card-item__picture">
+									<img src="assets/img/catalog-filters/card-5.png"
+                                         srcset="assets/img/catalog-filters/card-5.png 1x, assets/img/catalog-filters/card-5.png 2x"
+                                         alt="">
+								</span>
+                            <span class="card-item__content">
+									<span class="card-item__content__title">Ford F-150</span>
+									<span class="card-item__content__date">2020</span>
+									<span class="card-item__content__text">Полноразмерный пикап</span>
+								</span>
+                        </a>
+                    </div>
+                    <div class="catalog__item">
+                        <a href="#" class="card-item">
+								<span class="card-item__picture">
+									<img src="assets/img/catalog-filters/card-6.png"
+                                         srcset="assets/img/catalog-filters/card-6.png 1x, assets/img/catalog-filters/card-6.png 2x"
+                                         alt="">
+								</span>
+                            <span class="card-item__content">
+									<span class="card-item__content__title">Chevrolet Silverado 2500</span>
+									<span class="card-item__content__date">2020</span>
+									<span class="card-item__content__text">Тяжёлый пикап</span>
+								</span>
+                        </a>
+                    </div>
+                </div>
+                <button class="btn js-catalog-item-load" type="button">
+                    <div class="btn__text">
+                        <span>показать еще</span>
+                        <i class="demo-icon icon-more"></i>
+                    </div>
+                    <span class="btn--border-left">
+							<svg class="svg-icon svg-btn-border" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 171.99255 682.66669">
+								<path d="M 16.64779,680.18005 C 7.4079304,675.98248 0.02875043,665.05945 4.3281531e-7,655.53721 -0.00899957,652.71822 140.34507,31.024028 143.41537,20.280822 146.69399,8.808736 157.87033,0 169.14725,0 c 2.51684,0 2.84531,0.752474 2.84531,6.518279 0,6.334366 -0.1256,6.541852 -4.45343,7.353747 C 157.51441,15.752674 163.27475,-6.934725 85.16161,338.32064 6.3556204,686.6383 11.36339,661.21608 20.46335,666.7649 c 4.00281,2.44076 7.5856,2.55872 77.86254,2.56347 l 73.66667,0.005 v 6.66666 6.66667 l -75,-0.0293 c -69.66109,-0.0272 -75.38047,-0.20217 -80.34477,-2.45739 z"/>
+							</svg>
+							<svg class="svg-icon svg-btn-fill" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 171.74132 683.01783">
+								<path d="M 16.396552,680.53117 C 5.7128325,675.67765 -1.4923775,663.11721 0.26342247,652.40716 0.68925247,649.80969 33.130512,505.79474 72.355122,332.37393 135.8412,51.687744 144.07901,16.488268 147.37363,11.825998 151.58952,5.860016 158.60804,1.761544 166.398,0.71669 L 171.74132,0 v 341.5089 341.50891 l -74.999998,-0.0293 c -69.6611,-0.0272 -75.38047,-0.20217 -80.34477,-2.45739 z"/>
+							</svg>
+						</span>
+                    <span class="btn--border-right">
+							<svg class="svg-icon svg-btn-border" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 172 682.64063">
+								<path d="m 0,676.00001 c 0,-5.83161 0.34231,-6.66666 2.73288,-6.66666 3.78759,0 10.25826,-3.53592 11.8238,-6.46115 1.48691,-2.77832 142.69433,-625.976245 143.73382,-634.347855 0.58619,-4.7209 0.1228,-6.09928 -3.36197,-10 L 150.88666,13.999995 75.44333,13.634455 0,13.268905 V 6.63445 0 h 74.4677 c 53.24164,0 75.75958,0.443225 79,1.554974 C 164.36517,5.293759 172,15.529185 172,26.399805 172,30.617595 35.69207,638.31592 29.20539,663.01752 26.57877,673.01985 14.47349,682.56889 4.33333,682.6374 0.01832,682.6666 0,682.6384 0,676.00001 Z"/>
+							</svg>
+							<svg class="svg-icon svg-btn-fill" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 172 682.66669">
+								<path d="M 0,341.33334 V 0 h 74.4677 c 53.24164,0 75.75958,0.443226 79,1.554975 C 164.36517,5.29376 172,15.529183 172,26.399804 172,30.617594 35.69207,638.31593 29.20539,663.01754 26.57876,673.01987 14.47349,682.5689 4.33333,682.63742 L 0,682.66672 Z"/>
+							</svg>
+						</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container --hr">
+        <div class="partners">
+            <div class="partner-item">
+                <img src="assets/img/partners/toyota.png"
+                     srcset="assets/img/partners/toyota.png 1x, assets/img/partners/toyota_x2.png 2x" alt="">
+            </div>
+            <div class="partner-item">
+                <img src="assets/img/partners/dodge.png"
+                     srcset="assets/img/partners/dodge.png 1x, assets/img/partners/dodge_x2.png 2x" alt="">
+            </div>
+            <div class="partner-item">
+                <img src="assets/img/partners/ram.png"
+                     srcset="assets/img/partners/ram.png 1x, assets/img/partners/ram_x2.png 2x" alt="">
+            </div>
+            <div class="partner-item">
+                <img src="assets/img/partners/ford.png"
+                     srcset="assets/img/partners/ford.png 1x, assets/img/partners/ford_x2.png 2x" alt="">
+            </div>
+            <div class="partner-item">
+                <img src="assets/img/partners/lincoln.png"
+                     srcset="assets/img/partners/lincoln.png 1x, assets/img/partners/lincoln_x2.png 2x" alt="">
+            </div>
+            <div class="partner-item">
+                <img src="assets/img/partners/chevrolet.png"
+                     srcset="assets/img/partners/chevrolet.png 1x, assets/img/partners/chevrolet_x2.png 2x" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-content">
+            <a class="footer-content__logo">
+                <span>Trans</span>
+                <span>Auto</span>
+                <span>Group</span>
+            </a>
+            <div class="footer-info__wrap">
+                <div class="footer-info footer-info--col">
+                    <h4 class="footer-info__header">Автомобили</h4>
+                    <ul class="footer-info__list">
+                        <li><a href="#">Автомобили в наличии</a></li>
+                        <li><a href="#">Каталог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info footer-info--col">
+                    <h4 class="footer-info__header">О компании</h4>
+                    <ul class="footer-info__list">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Как мы работаем</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info footer-info--col">
+                    <h4 class="footer-info__header">Услуги</h4>
+                    <ul class="footer-info__list">
+                        <li><a href="#">Продажа автомобилей</a></li>
+                        <li><a href="#">Сервис и обслуживание</a></li>
+                        <li><a href="#">Финансовые услуги</a></li>
+                        <li><a href="#">Услуги по транспортировке</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info footer-info--col">
+                    <h4 class="footer-info__header">Помощь</h4>
+                    <ul class="footer-info__list">
+                        <li><a href="#">Вопрос-ответ</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info footer-info--col">
+                    <h4 class="footer-info__header">Другое</h4>
+                    <ul class="footer-info__list">
+                        <li><a href="#">Схема поставки</a></li>
+                        <li><a href="#">История продаж</a></li>
+                        <li><a href="#">Новости и публикации</a></li>
+                        <li><a href="#">Видео раздел</a></li>
+                        <li><a href="#">Наши партнёры</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container --hr">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-4 copy">
+                &copy; Trans Auto Group. 2008 — 2020
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 footer-address">
+                г. Москва, Кутузовский проспект, 88
+            </div>
+            <div class="col-12 col-md-2 col-lg-4">
+                <ul class="footer-social">
+                    <li>
+                        <a class="footer-social__link footer-social__link--instagramm" href="#">
+                            <i class="demo-icon icon-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-social__link footer-social__link--youtube" href="#">
+                            <i class="demo-icon icon-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="#">Оферта</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- BEGIN Mobile Navigation -->
+<div id="modal-nav" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-nav__dialog" role="document">
+                <div class="modal-nav__header">
+                    <button type="button" class="modal-nav__btn-close" data-dismiss="modal" aria-label="Close">
+                        <i class="demo-icon icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-nav__content">
+                    <ul class="modal-nav__content__list">
+                        <li><a class="active" href="#">О компании</a></li>
+                        <li><a href="#">История продаж</a></li>
+                        <li><a href="#">Новости и публикации</a></li>
+                        <li><a href="#">Видео</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="modal-nav__footer">
+                    <ul class="footer-social">
+                        <li>
+                            <a class="footer-social__link footer-social__link--instagramm" href="#">
+                                <i class="demo-icon icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-social__link footer-social__link--youtube" href="#">
+                                <i class="demo-icon icon-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copy">&copy; Trans Auto Group. 2008 — 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Mobile Navigation -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- build:js -->
+<script src="assets/js/app.js?t=1680099292858"></script>
+<!-- endbuild -->
+
+
+
+</body>
+</html>

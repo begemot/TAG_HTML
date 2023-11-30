@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Trans Auto Group</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Favicon -->
+	<link rel="icon" href="assets/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+	<link rel="manifest" href="assets/favicon/manifest.json">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+
+	<!-- build:css -->
+	<link rel="stylesheet" href="assets/css/main.min.css?t=1680099292923">
+	<!-- endbuild -->
+
+</head>
+<body>
+
+	<header class="header-wrap">
+		<div class="container --hr">
+			<div class="header">
+				<a href="#" class="logo">
+					<img src="assets/img/Logo.svg" alt="">
+				</a>
+
+				<ul class="navigation">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Авто в наличии</a></li>
+					<li>
+						<a class="submenu__link" href="#">
+							Услуги
+							<i class="demo-icon icon-arrow-menu-down"></i>
+						</a>
+						<button type="button" class="btn-submenu-open">
+							<i class="demo-icon icon-arrow-menu-down"></i>
+						</button>
+						<ul class="submenu">
+							<li><a href="#">link 1</a></li>
+							<li><a href="#">link 2</a></li>
+							<li><a href="#">link 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Схема поставки</a></li>
+					<li><a href="#">Лизинг</a></li>
+				</ul>
+
+				<div class="header__contacts">
+					<a href="tel:+78123593633" class="header__contacts__phone">+7 (812) 359-36-33</a>
+					<a href="viber://chat?number=+78123593633" class="header__contacts__viber">
+						<i class="demo-icon icon-phone"></i>
+					</a>
+					<a href="whatsapp://send?phone=78123593633" class="header__contacts__whatsapp">
+						<i class="demo-icon icon-whatsapp"></i>
+					</a>
+					<div class="search-wrap">
+						<button class="btn-search js-open-search" type="button">
+							<i class="demo-icon icon-search"></i>
+						</button>
+						<form class="search-box-wrap">
+							<input type="text" placeholder="Поиск">
+							<button type="submit" class="btn-search">
+								<i class="demo-icon icon-search"></i>
+							</button>
+							<button type="button" class="btn-close js-close-search">
+								<i class="demo-icon icon-close"></i>
+							</button>
+							<span></span>
+						</form>
+					</div>
+					<button class="btn-menu" type="button" data-toggle="modal" data-target="#modal-nav">
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section category-list">
+		<div class="container category-list__top">
+			<h1 class="title">автомобили</h1>
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="tab" href="#type">По типу</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#mark">По маркам</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container tab-content">
+			<div class="category-list__row tab-pane fade show active" id="type">
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/pickup.png" srcset="assets/img/category-list/pickup.png 1x, assets/img/category-list/pickup_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">пикапы</a></h3>
+							<span class="category-list__item__count">
+								<span>38</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/vnedorozhnik.png" srcset="assets/img/category-list/vnedorozhnik.png 1x, assets/img/category-list/vnedorozhnik_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">внедорожники</a></h3>
+							<span class="category-list__item__count">
+								<span>27</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/sportcar.png" srcset="assets/img/category-list/sportcar.png 1x, assets/img/category-list/sportcar_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">спорткары</a></h3>
+							<span class="category-list__item__count">
+								<span>19</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/sedan.png" srcset="assets/img/category-list/sedan.png 1x, assets/img/category-list/sedan_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">седаны</a></h3>
+							<span class="category-list__item__count">
+								<span>14</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/miniven.png" srcset="assets/img/category-list/miniven.png 1x, assets/img/category-list/miniven_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">минивэны</a></h3>
+							<span class="category-list__item__count">
+								<span>9</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/bus.png" srcset="assets/img/category-list/bus.png 1x, assets/img/category-list/bus_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">автобусы</a></h3>
+							<span class="category-list__item__count">
+								<span>3</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/electro.png" srcset="assets/img/category-list/electro.png 1x, assets/img/category-list/electro_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">электрокары</a></h3>
+							<span class="category-list__item__count">
+								<span>4</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category-list__row tab-pane fade" id="mark">
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/pickup.png" srcset="assets/img/category-list/pickup.png 1x, assets/img/category-list/pickup_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">пикапы</a></h3>
+							<span class="category-list__item__count">
+								<span>38</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="category-list__col">
+					<div class="category-list__item">
+						<div class="category-list__item__picture">
+							<img src="assets/img/category-list/vnedorozhnik.png" srcset="assets/img/category-list/vnedorozhnik.png 1x, assets/img/category-list/vnedorozhnik_x2.png 2x" alt="">
+						</div>
+						<div class="category-list__item__text">
+							<h3 class="category-list__item__title"><a href="#">внедорожники</a></h3>
+							<span class="category-list__item__count">
+								<span>27</span>
+								<svg class="icon-count-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.99257 353.62243">
+									<path d="M 15.325903,351.76548 C 7.2967633,348.24759 0.03538325,337.91104 3.250716e-6,329.94911 -0.01899675,325.66844 83.257593,16.391035 85.539903,12.266186 88.398833,7.0991889 94.658463,2.2865829 100.3259,0.89822593 L 103.99257,0 v 176.81121 176.81122 l -42.333327,-0.0522 c -31.96024,-0.0394 -43.31347,-0.48161 -46.33334,-1.80475 z" />
+								</svg>
+								<svg class="icon-count-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.33601 353.51306">
+								<path d="M 0,176.75652 V 0 H 42.245705 C 82.5706,0 84.757041,0.128591 90.333683,2.828198 96.857626,5.986384 102.05505,12.866741 103.30527,20 103.94055,23.624704 94.874078,59.349157 62.699004,180 39.915709,265.43334 20.946535,336.38658 20.545283,337.67387 18.713701,343.54993 10.975794,350.12726 3,352.58761 l -3,0.92544 z" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="media">
+		<div class="container">
+			<h2 class="title text-center">Новинки авторынка</h2>
+			<p>Самые свежие предложения</p>
+		</div>
+		<div class="media__slider-wrap">
+			<div class="media__top">
+				<div class="media__top__item media-car media-car--big">
+					<h3 class="media-car__title">Lincoln Aviator</h3>
+					<div class="media-car__picture" style="background-image: url('assets/img/media/slide-1.jpg')"></div>
+					<p class="media-car__text">Полёт в будущее</p>
+					<a href="#" class="link-more">
+						Подробнее
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</div>
+				<div class="media__top__item media-car media-car--big">
+					<h3 class="media-car__title">dodge RAM 1500</h3>
+					<div class="media-car__picture" style="background-image: url('assets/img/media/slide-2.jpg')"></div>
+					<p class="media-car__text">Полёт в будущее</p>
+					<a href="#" class="link-more">
+						Подробнее
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</div>
+				<div class="media__top__item media-car media-car--big">
+					<h3 class="media-car__title">FORD MUSTANG</h3>
+					<div class="media-car__picture" style="background-image: url('assets/img/media/slide-3.jpg')"></div>
+					<p class="media-car__text">Полёт в будущее</p>
+					<a href="#" class="link-more">
+						Подробнее
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</div>
+				<div class="media__top__item media-car media-car--big">
+					<h3 class="media-car__title">JEEP Gladiator</h3>
+					<div class="media-car__picture" style="background-image: url('assets/img/media/slide-4.jpg')"></div>
+					<p class="media-car__text">Полёт в будущее</p>
+					<a href="#" class="link-more">
+						Подробнее
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</div>
+				<div class="media__top__item media-car media-car--big">
+					<h3 class="media-car__title">Lincoln navigator</h3>
+					<div class="media-car__picture" style="background-image: url('assets/img/media/slide-5.jpg')"></div>
+					<p class="media-car__text">Полёт в будущее</p>
+					<a href="#" class="link-more">
+						Подробнее
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</div>
+			</div>
+			<div class="hero-content__arrows media__arrows">
+				<button class="hero-content__arrows--prev js-media--prev" aria-label="Previous" type="button">
+					<i class="demo-icon icon-arrow-left"></i>
+					<i class="demo-icon icon-slope-square-lg"></i>
+				</button>
+				<button class="hero-content__arrows--next js-media--next" aria-label="Next" type="button">
+					<i class="demo-icon icon-arrow-right"></i>
+					<i class="demo-icon icon-slope-square-lg"></i>
+				</button>
+			</div>
+		</div>
+		<div class="media__down">
+			<div class="media__down__item media-car">
+				<h3 class="media-car__title">dodge RAM 1500</h3>
+				<div class="media-car__picture" style="background-image: url('assets/img/media/slide-2.jpg')"></div>
+				<a href="#" class="link-more">
+					Подробнее
+					<i class="demo-icon icon-arrow-more"></i>
+				</a>
+			</div>
+			<div class="media__down__item media-car">
+				<h3 class="media-car__title">FORD MUSTANG</h3>
+				<div class="media-car__picture" style="background-image: url('assets/img/media/slide-3.jpg')"></div>
+				<a href="#" class="link-more">
+					Подробнее
+					<i class="demo-icon icon-arrow-more"></i>
+				</a>
+			</div>
+			<div class="media__down__item media-car">
+				<h3 class="media-car__title">JEEP Gladiator</h3>
+				<div class="media-car__picture" style="background-image: url('assets/img/media/slide-4.jpg')"></div>
+				<a href="#" class="link-more">
+					Подробнее
+					<i class="demo-icon icon-arrow-more"></i>
+				</a>
+			</div>
+			<div class="media__down__item media-car">
+				<h3 class="media-car__title">Lincoln navigator</h3>
+				<div class="media-car__picture" style="background-image: url('assets/img/media/slide-5.jpg')"></div>
+				<a href="#" class="link-more">
+					Подробнее
+					<i class="demo-icon icon-arrow-more"></i>
+				</a>
+			</div>
+			<div class="media__down__item media-car --start-item">
+				<h3 class="media-car__title">Lincoln Aviator</h3>
+				<div class="media-car__picture" style="background-image: url('assets/img/media/slide-1.jpg')"></div>
+				<a href="#" class="link-more">
+					Подробнее
+					<i class="demo-icon icon-arrow-more"></i>
+				</a>
+			</div>
+		</div>
+
+		<button class="btn js-media-add" type="button">
+			<div class="btn__text">
+				<span>показать еще</span>
+				<i class="demo-icon icon-more"></i>
+			</div>
+			<span class="btn--border-left">
+				<svg class="svg-icon svg-btn-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.99255 682.66669">
+					<path d="M 16.64779,680.18005 C 7.4079304,675.98248 0.02875043,665.05945 4.3281531e-7,655.53721 -0.00899957,652.71822 140.34507,31.024028 143.41537,20.280822 146.69399,8.808736 157.87033,0 169.14725,0 c 2.51684,0 2.84531,0.752474 2.84531,6.518279 0,6.334366 -0.1256,6.541852 -4.45343,7.353747 C 157.51441,15.752674 163.27475,-6.934725 85.16161,338.32064 6.3556204,686.6383 11.36339,661.21608 20.46335,666.7649 c 4.00281,2.44076 7.5856,2.55872 77.86254,2.56347 l 73.66667,0.005 v 6.66666 6.66667 l -75,-0.0293 c -69.66109,-0.0272 -75.38047,-0.20217 -80.34477,-2.45739 z" />
+				</svg>
+				<svg class="svg-icon svg-btn-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.74132 683.01783">
+					<path d="M 16.396552,680.53117 C 5.7128325,675.67765 -1.4923775,663.11721 0.26342247,652.40716 0.68925247,649.80969 33.130512,505.79474 72.355122,332.37393 135.8412,51.687744 144.07901,16.488268 147.37363,11.825998 151.58952,5.860016 158.60804,1.761544 166.398,0.71669 L 171.74132,0 v 341.5089 341.50891 l -74.999998,-0.0293 c -69.6611,-0.0272 -75.38047,-0.20217 -80.34477,-2.45739 z" />
+				</svg>
+			</span>
+			<span class="btn--border-right">
+				<svg class="svg-icon svg-btn-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 682.64063">
+					<path d="m 0,676.00001 c 0,-5.83161 0.34231,-6.66666 2.73288,-6.66666 3.78759,0 10.25826,-3.53592 11.8238,-6.46115 1.48691,-2.77832 142.69433,-625.976245 143.73382,-634.347855 0.58619,-4.7209 0.1228,-6.09928 -3.36197,-10 L 150.88666,13.999995 75.44333,13.634455 0,13.268905 V 6.63445 0 h 74.4677 c 53.24164,0 75.75958,0.443225 79,1.554974 C 164.36517,5.293759 172,15.529185 172,26.399805 172,30.617595 35.69207,638.31592 29.20539,663.01752 26.57877,673.01985 14.47349,682.56889 4.33333,682.6374 0.01832,682.6666 0,682.6384 0,676.00001 Z"/>
+				</svg>
+				<svg class="svg-icon svg-btn-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 682.66669">
+					<path d="M 0,341.33334 V 0 h 74.4677 c 53.24164,0 75.75958,0.443226 79,1.554975 C 164.36517,5.29376 172,15.529183 172,26.399804 172,30.617594 35.69207,638.31593 29.20539,663.01754 26.57876,673.01987 14.47349,682.5689 4.33333,682.63742 L 0,682.66672 Z" />
+				</svg>
+			</span>
+		</button>
+	</section>
+
+	<div class="section">
+		<div class="container">
+			<h3 class="title text-center">Автомобили в наличии</h3>
+			<div class="auto__list">
+				<div class="auto">
+					<div class="auto__picture">
+						<img src="assets/img/auto-item.jpg" srcset="assets/img/auto-item.jpg 1x, assets/img/auto-item.jpg 2x" alt="">
+						<span class="auto__picture__state">Эксклюзив</span>
+					</div>
+					<h3 class="auto__title"><a href="#">Lincoln Aviator 2020 Black Label</a></h3>
+					<p class="auto__text">3.0 V6 Twin-Turbocharged бензин Автоматическая SelectShift. 10 ст. Полный</p>
+					<span class="auto__price">
+						<b>8 841 540 ₽</b> (127 000 $)
+					</span>
+				</div>
+				<div class="auto">
+					<div class="auto__picture auto--reserve">
+						<img src="assets/img/auto-item.jpg" srcset="assets/img/auto-item.jpg 1x, assets/img/auto-item.jpg 2x" alt="">
+						<span class="auto__picture__state">Эксклюзив</span>
+					</div>
+					<h3 class="auto__title"><a href="#">Lincoln Aviator 2020 Black Label</a></h3>
+					<p class="auto__text">3.0 V6 Twin-Turbocharged бензин Автоматическая SelectShift. 10 ст. Полный</p>
+					<span class="auto__price">
+						<b>8 841 540 ₽</b> (127 000 $)
+					</span>
+				</div>
+				<div class="auto">
+					<div class="auto__picture auto--discount">
+						<img src="assets/img/auto-item.jpg" srcset="assets/img/auto-item.jpg 1x, assets/img/auto-item.jpg 2x" alt="">
+						<span class="auto__picture__state">Эксклюзив</span>
+					</div>
+					<h3 class="auto__title"><a href="#">Lincoln Aviator 2020 Black Label</a></h3>
+					<p class="auto__text">3.0 V6 Twin-Turbocharged бензин Автоматическая SelectShift. 10 ст. Полный</p>
+					<span class="auto__price">
+						<b>8 841 540 ₽</b> (127 000 $)
+					</span>
+				</div>
+				<div class="auto">
+					<div class="auto__picture">
+						<img src="assets/img/auto-item.jpg" srcset="assets/img/auto-item.jpg 1x, assets/img/auto-item.jpg 2x" alt="">
+						<span class="auto__picture__state">Эксклюзив</span>
+					</div>
+					<h3 class="auto__title"><a href="#">Lincoln Aviator 2020 Black Label</a></h3>
+					<p class="auto__text">3.0 V6 Twin-Turbocharged бензин Автоматическая SelectShift. 10 ст. Полный</p>
+					<span class="auto__price">
+						<b>8 841 540 ₽</b> (127 000 $)
+					</span>
+				</div>
+				<div class="auto">
+					<div class="auto__picture">
+						<img src="assets/img/auto-item.jpg" srcset="assets/img/auto-item.jpg 1x, assets/img/auto-item.jpg 2x" alt="">
+						<span class="auto__picture__state">Эксклюзив</span>
+					</div>
+					<h3 class="auto__title"><a href="#">Lincoln Aviator 2020 Black Label</a></h3>
+					<p class="auto__text">3.0 V6 Twin-Turbocharged бензин Автоматическая SelectShift. 10 ст. Полный</p>
+					<span class="auto__price">
+						<b>8 841 540 ₽</b> (127 000 $)
+					</span>
+				</div>
+			</div>
+			<a href="#" class="link-more center">
+				все автомобили в наличии
+				<i class="demo-icon icon-arrow-more"></i>
+			</a>
+		</div>
+	</div>
+
+	<section class="services-wrap">
+		<div class="container">
+			<h3 class="title text-center">предоставляемые услуги</h3>
+		</div>
+		<div class="services-slider__wrap">
+			<div class="services-slider">
+				<div class="services-slider__slide" style="background-image: url('assets/img/home/services.jpg')">
+					<div class="container">
+						<div class="services-content">
+							<h4 class="services-content__title">
+								<span>СЕРВИС,</span><br>
+								ОБСЛУЖИВАНИЕ, <br>
+								ТЮНИНГ
+							</h4>
+							<ul class="services-content__list">
+								<li>Собственный сервисный центр;</li>
+								<li>Оригинальное техническое оборудование из США;</li>
+								<li>Специализированный инструмент из США;</li>
+								<li>Доработка пикапов под цели и задачи клиента;</li>
+								<li>Только оригинальные запасные части и аксессуары;</li>
+								<li>Тюнинг</li>
+							</ul>
+
+							<a href="#" class="link-more">
+								ПЕРЕЙТИ В УСЛУГИ
+								<i class="demo-icon icon-arrow-more"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="services-slider__slide" style="background-image: url('assets/img/home/services.jpg')">
+					<div class="container">
+						<div class="services-content">
+							<h4 class="services-content__title">
+								<span>СЕРВИС2,</span><br>
+								ОБСЛУЖИВАНИЕ, <br>
+								ТЮНИНГ
+							</h4>
+							<ul class="services-content__list">
+								<li>Собственный сервисный центр;</li>
+								<li>Оригинальное техническое оборудование из США;</li>
+								<li>Специализированный инструмент из США;</li>
+								<li>Доработка пикапов под цели и задачи клиента;</li>
+								<li>Только оригинальные запасные части и аксессуары;</li>
+								<li>Тюнинг</li>
+							</ul>
+
+							<a href="#" class="link-more">
+								ПЕРЕЙТИ В УСЛУГИ
+								<i class="demo-icon icon-arrow-more"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="services-slider__slide" style="background-image: url('assets/img/home/services.jpg')">
+					<div class="container">
+						<div class="services-content">
+							<h4 class="services-content__title">
+								<span>СЕРВИС3,</span><br>
+								ОБСЛУЖИВАНИЕ, <br>
+								ТЮНИНГ
+							</h4>
+							<ul class="services-content__list">
+								<li>Собственный сервисный центр;</li>
+								<li>Оригинальное техническое оборудование из США;</li>
+								<li>Специализированный инструмент из США;</li>
+								<li>Доработка пикапов под цели и задачи клиента;</li>
+								<li>Только оригинальные запасные части и аксессуары;</li>
+								<li>Тюнинг</li>
+							</ul>
+
+							<a href="#" class="link-more">
+								ПЕРЕЙТИ В УСЛУГИ
+								<i class="demo-icon icon-arrow-more"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="services-slider__nav container">
+				<div class="hero-content__arrows services-slider__arrows">
+					<button class="hero-content__arrows--prev js-services-slider--prev" aria-label="Previous" type="button">
+						<i class="demo-icon icon-arrow-left"></i>
+						<i class="demo-icon icon-slope-square-lg"></i>
+					</button>
+					<button class="hero-content__arrows--next js-services-slider--next" aria-label="Next" type="button">
+						<i class="demo-icon icon-arrow-right"></i>
+						<i class="demo-icon icon-slope-square-lg"></i>
+					</button>
+				</div>
+				<div class="hero-content__dots services-slider__dots"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="blog-list">
+		<div class="container">
+			<h3 class="title text-center">БЛОГ trans auto group</h3>
+		</div>
+		<div class="blog-list__slider">
+			<div class="blog-list__slider__item">
+				<article class="blog-list__item">
+					<div class="blog-list__item__picture">
+						<img src="assets/img/blog/blog-image.jpg" srcset="assets/img/blog/blog-image.jpg 1x, assets/img/blog/blog-image.jpg 2x" alt="">
+					</div>
+					<h3 class="blog-list__item__title">Диванный обзор Chevrolet Express 2500 V8 Vortec Limited SE</h3>
+					<p class="blog-list__item__text">Сегодня с вами как обычно Дмитрий Брум и мы продолжаем нашу замечательную рубрику «Диванные обзоры». И сегодня с нами Chevrolet Express версии 2500, который обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колесной...</p>
+					<a href="#" class="link-more">
+						читать статью
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</article>
+			</div>
+			<div class="blog-list__slider__item">
+				<article class="blog-list__item">
+					<div class="blog-list__item__picture">
+						<img src="assets/img/blog/blog-image.jpg" srcset="assets/img/blog/blog-image.jpg 1x, assets/img/blog/blog-image.jpg 2x" alt="">
+					</div>
+					<h3 class="blog-list__item__title">Диванный обзор Chevrolet Express 2500 V8 Vortec Limited SE</h3>
+					<p class="blog-list__item__text">Сегодня с вами как обычно Дмитрий Брум и мы продолжаем нашу замечательную рубрику «Диванные обзоры». И сегодня с нами Chevrolet Express версии 2500, который обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колесной...</p>
+					<a href="#" class="link-more">
+						читать статью
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</article>
+			</div>
+			<div class="blog-list__slider__item">
+				<article class="blog-list__item">
+					<div class="blog-list__item__picture">
+						<img src="assets/img/blog/blog-image.jpg" srcset="assets/img/blog/blog-image.jpg 1x, assets/img/blog/blog-image.jpg 2x" alt="">
+					</div>
+					<h3 class="blog-list__item__title">Диванный обзор Chevrolet Express 2500 V8 Vortec Limited SE</h3>
+					<p class="blog-list__item__text">Сегодня с вами как обычно Дмитрий Брум и мы продолжаем нашу замечательную рубрику «Диванные обзоры». И сегодня с нами Chevrolet Express версии 2500, который обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колесной...</p>
+					<a href="#" class="link-more">
+						читать статью
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</article>
+			</div>
+			<div class="blog-list__slider__item">
+				<article class="blog-list__item">
+					<div class="blog-list__item__picture">
+						<img src="assets/img/blog/blog-image.jpg" srcset="assets/img/blog/blog-image.jpg 1x, assets/img/blog/blog-image.jpg 2x" alt="">
+					</div>
+					<h3 class="blog-list__item__title">Диванный обзор Chevrolet Express 2500 V8 Vortec Limited SE</h3>
+					<p class="blog-list__item__text">Сегодня с вами как обычно Дмитрий Брум и мы продолжаем нашу замечательную рубрику «Диванные обзоры». И сегодня с нами Chevrolet Express версии 2500, который обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колесной...</p>
+					<a href="#" class="link-more">
+						читать статью
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</article>
+			</div>
+			<div class="blog-list__slider__item">
+				<article class="blog-list__item">
+					<div class="blog-list__item__picture">
+						<img src="assets/img/blog/blog-image.jpg" srcset="assets/img/blog/blog-image.jpg 1x, assets/img/blog/blog-image.jpg 2x" alt="">
+					</div>
+					<h3 class="blog-list__item__title">Диванный обзор Chevrolet Express 2500 V8 Vortec Limited SE</h3>
+					<p class="blog-list__item__text">Сегодня с вами как обычно Дмитрий Брум и мы продолжаем нашу замечательную рубрику «Диванные обзоры». И сегодня с нами Chevrolet Express версии 2500, который обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колеснойкоторый обычно имеет два варианта длины колесной...</p>
+					<a href="#" class="link-more">
+						читать статью
+						<i class="demo-icon icon-arrow-more"></i>
+					</a>
+				</article>
+			</div>
+		</div>
+		<div class="container text-center">
+			<div class="hr"></div>
+			<a href="#" class="link-more">
+				ПЕРЕЙТИ В блог
+				<i class="demo-icon icon-arrow-more"></i>
+			</a>
+		</div>
+	</section>
+
+	<section class="media-video">
+		<div class="media-video__slider-wrap">
+			<div class="media-video__top">
+				<div class="media-video__top__item media-car-video media-car-video--big">
+					<h3 class="media-car-video__title">Lincoln Aviator</h3>
+					<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-1.jpg')"></div>
+					<p class="media-car-video__text">Полёт в будущее</p>
+					<a href="#" class="btn-play-video btn-play-video--big">
+						<span>
+							<i class="demo-icon icon-play"></i>
+							<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+								<polygon points="10,0 41,0 31,30 0,30" />
+							</svg>
+						</span>
+						<span class="btn-play-video__text">Смотреть обзор</span>
+					</a>
+				</div>
+				<div class="media-video__top__item media-car-video media-car-video--big">
+					<h3 class="media-car-video__title">dodge RAM 1500</h3>
+					<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-2.jpg')"></div>
+					<p class="media-car-video__text">Полёт в будущее</p>
+					<a href="#" class="btn-play-video btn-play-video--big">
+						<span>
+							<i class="demo-icon icon-play"></i>
+							<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+								<polygon points="10,0 41,0 31,30 0,30" />
+							</svg>
+						</span>
+						<span class="btn-play-video__text">Смотреть обзор</span>
+					</a>
+				</div>
+				<div class="media-video__top__item media-car-video media-car-video--big">
+					<h3 class="media-car-video__title">FORD MUSTANG</h3>
+					<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-3.jpg')"></div>
+					<p class="media-car-video__text">Полёт в будущее</p>
+					<a href="#" class="btn-play-video btn-play-video--big">
+						<span>
+							<i class="demo-icon icon-play"></i>
+							<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+								<polygon points="10,0 41,0 31,30 0,30" />
+							</svg>
+						</span>
+						<span class="btn-play-video__text">Смотреть обзор</span>
+					</a>
+				</div>
+				<div class="media-video__top__item media-car-video media-car-video--big">
+					<h3 class="media-car-video__title">JEEP Gladiator</h3>
+					<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-4.jpg')"></div>
+					<p class="media-car-video__text">Полёт в будущее</p>
+					<a href="#" class="btn-play-video btn-play-video--big">
+						<span>
+							<i class="demo-icon icon-play"></i>
+							<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+								<polygon points="10,0 41,0 31,30 0,30" />
+							</svg>
+						</span>
+						<span class="btn-play-video__text">Смотреть обзор</span>
+					</a>
+				</div>
+				<div class="media-video__top__item media-car-video media-car-video--big">
+					<h3 class="media-car-video__title">Lincoln navigator</h3>
+					<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-5.jpg')"></div>
+					<p class="media-car-video__text">Полёт в будущее</p>
+					<a href="#" class="btn-play-video btn-play-video--big">
+						<span>
+							<i class="demo-icon icon-play"></i>
+							<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+								<polygon points="10,0 41,0 31,30 0,30" />
+							</svg>
+						</span>
+						<span class="btn-play-video__text">Смотреть обзор</span>
+					</a>
+				</div>
+			</div>
+			<div class="hero-content__arrows media-video__arrows">
+				<button class="hero-content__arrows--prev js-media-video--prev" aria-label="Previous" type="button">
+					<i class="demo-icon icon-arrow-left"></i>
+					<i class="demo-icon icon-slope-square-lg"></i>
+				</button>
+				<button class="hero-content__arrows--next js-media-video--next" aria-label="Next" type="button">
+					<i class="demo-icon icon-arrow-right"></i>
+					<i class="demo-icon icon-slope-square-lg"></i>
+				</button>
+			</div>
+		</div>
+		<div class="media-video__down">
+			<div class="media-video__down__item media-car-video">
+				<a href="#" class="btn-play-video">
+					<span>
+						<i class="demo-icon icon-play"></i>
+						<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+							<polygon points="10,0 41,0 31,30 0,30" />
+						</svg>
+					</span>
+				</a>
+				<h3 class="media-car-video__title">dodge RAM 1500</h3>
+				<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-2.jpg')"></div>
+			</div>
+			<div class="media-video__down__item media-car-video">
+				<button type="button" class="btn-play-video">
+					<span>
+						<i class="demo-icon icon-play"></i>
+						<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+							<polygon points="10,0 41,0 31,30 0,30" />
+						</svg>
+					</span>
+				</button>
+				<h3 class="media-car-video__title">FORD MUSTANG</h3>
+				<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-3.jpg')"></div>
+			</div>
+			<div class="media-video__down__item media-car-video">
+				<button type="button" class="btn-play-video">
+					<span>
+						<i class="demo-icon icon-play"></i>
+						<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+							<polygon points="10,0 41,0 31,30 0,30" />
+						</svg>
+					</span>
+				</button>
+				<h3 class="media-car-video__title">JEEP Gladiator</h3>
+				<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-4.jpg')"></div>
+			</div>
+			<div class="media-video__down__item media-car-video">
+				<a href="#" class="btn-play-video">
+					<span>
+						<i class="demo-icon icon-play"></i>
+						<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+							<polygon points="10,0 41,0 31,30 0,30" />
+						</svg>
+					</span>
+				</a>
+				<h3 class="media-car-video__title">Lincoln navigator</h3>
+				<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-5.jpg')"></div>
+			</div>
+			<div class="media-video__down__item media-car-video --start-item">
+				<a href="#" class="btn-play-video">
+					<span>
+						<i class="demo-icon icon-play"></i>
+						<svg class="svg-icon svg-square-bg" viewBox="0 0 42 30" preserveAspectRatio="none">
+							<polygon points="10,0 41,0 31,30 0,30" />
+						</svg>
+					</span>
+				</a>
+				<h3 class="media-car-video__title">Lincoln Aviator</h3>
+				<div class="media-car-video__picture" style="background-image: url('assets/img/media/slide-1.jpg')"></div>
+			</div>
+		</div>
+
+		<div class="container text-center">
+			<a href="#" class="link-more">
+				ПЕРЕЙТИ В раздел «видео»
+				<i class="demo-icon icon-arrow-more"></i>
+			</a>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container --hr">
+			<div class="partners">
+				<div class="partner-item">
+					<img src="assets/img/partners/toyota.png" srcset="assets/img/partners/toyota.png 1x, assets/img/partners/toyota_x2.png 2x" alt="">
+				</div>
+				<div class="partner-item">
+					<img src="assets/img/partners/dodge.png" srcset="assets/img/partners/dodge.png 1x, assets/img/partners/dodge_x2.png 2x" alt="">
+				</div>
+				<div class="partner-item">
+					<img src="assets/img/partners/ram.png" srcset="assets/img/partners/ram.png 1x, assets/img/partners/ram_x2.png 2x" alt="">
+				</div>
+				<div class="partner-item">
+					<img src="assets/img/partners/ford.png" srcset="assets/img/partners/ford.png 1x, assets/img/partners/ford_x2.png 2x" alt="">
+				</div>
+				<div class="partner-item">
+					<img src="assets/img/partners/lincoln.png" srcset="assets/img/partners/lincoln.png 1x, assets/img/partners/lincoln_x2.png 2x" alt="">
+				</div>
+				<div class="partner-item">
+					<img src="assets/img/partners/chevrolet.png" srcset="assets/img/partners/chevrolet.png 1x, assets/img/partners/chevrolet_x2.png 2x" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="footer-content">
+				<a class="footer-content__logo">
+					<span>Trans</span>
+					<span>Auto</span>
+					<span>Group</span>
+				</a>
+				<div class="footer-info__wrap">
+					<div class="footer-info footer-info--col">
+						<h4 class="footer-info__header">Автомобили</h4>
+						<ul class="footer-info__list">
+							<li><a href="#">Автомобили в наличии</a></li>
+							<li><a href="#">Каталог</a></li>
+						</ul>
+					</div>
+					<div class="footer-info footer-info--col">
+						<h4 class="footer-info__header">О компании</h4>
+						<ul class="footer-info__list">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Как мы работаем</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer-info footer-info--col">
+						<h4 class="footer-info__header">Услуги</h4>
+						<ul class="footer-info__list">
+							<li><a href="#">Продажа автомобилей</a></li>
+							<li><a href="#">Сервис и обслуживание</a></li>
+							<li><a href="#">Финансовые услуги</a></li>
+							<li><a href="#">Услуги по транспортировке</a></li>
+						</ul>
+					</div>
+					<div class="footer-info footer-info--col">
+						<h4 class="footer-info__header">Помощь</h4>
+						<ul class="footer-info__list">
+							<li><a href="#">Вопрос-ответ</a></li>
+							<li><a href="#">Обратная связь</a></li>
+						</ul>
+					</div>
+					<div class="footer-info footer-info--col">
+						<h4 class="footer-info__header">Другое</h4>
+						<ul class="footer-info__list">
+							<li><a href="#">Схема поставки</a></li>
+							<li><a href="#">История продаж</a></li>
+							<li><a href="#">Новости и публикации</a></li>
+							<li><a href="#">Видео раздел</a></li>
+							<li><a href="#">Наши партнёры</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container --hr">
+			<div class="row">
+				<div class="col-12 col-md-5 col-lg-4 copy">
+					&copy; Trans Auto Group. 2008 — 2020
+				</div>
+				<div class="col-12 col-md-5 col-lg-4 footer-address">
+					г. Москва, Кутузовский проспект, 88
+				</div>
+				<div class="col-12 col-md-2 col-lg-4">
+					<ul class="footer-social">
+						<li>
+							<a class="footer-social__link footer-social__link--instagramm" href="#">
+								<i class="demo-icon icon-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a class="footer-social__link footer-social__link--youtube" href="#">
+								<i class="demo-icon icon-youtube"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<ul class="footer-links">
+				<li><a href="#">Оферта</a></li>
+				<li><a href="#">Cookies</a></li>
+				<li><a href="#">Политика конфиденциальности</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- BEGIN Mobile Navigation -->
+	<div id="modal-nav" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-nav__dialog" role="document">
+					<div class="modal-nav__header">
+						<button type="button" class="modal-nav__btn-close" data-dismiss="modal" aria-label="Close">
+							<i class="demo-icon icon-close"></i>
+						</button>
+					</div>
+					<div class="modal-nav__content">
+						<ul class="modal-nav__content__list">
+							<li><a class="active" href="#">О компании</a></li>
+							<li><a href="#">История продаж</a></li>
+							<li><a href="#">Новости и публикации</a></li>
+							<li><a href="#">Видео</a></li>
+							<li><a href="#">Партнёры</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Помощь</a></li>
+						</ul>
+					</div>
+					<div class="modal-nav__footer">
+						<ul class="footer-social">
+							<li>
+								<a class="footer-social__link footer-social__link--instagramm" href="#">
+									<i class="demo-icon icon-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a class="footer-social__link footer-social__link--youtube" href="#">
+									<i class="demo-icon icon-youtube"></i>
+								</a>
+							</li>
+						</ul>
+						<p class="copy">&copy; Trans Auto Group. 2008 — 2020</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END Mobile Navigation -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+	<!-- build:js -->
+	<script src="assets/js/app.js?t=1680099292923"></script>
+	<!-- endbuild -->
+
+</body>
+</html>
