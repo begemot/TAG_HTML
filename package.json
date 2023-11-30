@@ -1,0 +1,47 @@
+{
+  "name": "gulp-webpack",
+  "version": "1.0.0",
+  "description": "Gulp for Sass, with WebPack for es6 syntax and modules, Jquery CDN",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "speedDev": "gulp speedDev",
+    "build": "gulp build"
+  },
+  "author": "Shulhin Roman",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "autoprefixer": "^9.8.5",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.5.0",
+    "browser-sync": "",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "inputmask": "^5.0.5",
+    "jquery-selectric": "^0.2.0",
+    "node-sass": "^7.0.1",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.1",
+    "sass": "^1.50.1",
+    "slick-carousel": "^1.8.1",
+    "sort-css-media-queries": "^1.5.0",
+    "webpack": "^4.44.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

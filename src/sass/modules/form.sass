@@ -1,0 +1,550 @@
+.title__card-car
+	text-transform: uppercase
+	font-size: 15px
+	font-weight: 700
+	font-family: "Roboto Condensed"
+
+.info__card-car
+	font-size: 14px
+	font-family: "Montserrat"
+	
+
+.card-car__modal
+	position: relative
+	overflow: hidden
+	padding: 40px
+	padding-bottom: 10px
+	cursor: pointer
+
+.card-car__modal::before
+	content: ""
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(0, 0, 0, 0)
+	transition: background 0.3s ease
+	z-index: 1
+
+.card-car__modal:hover::before
+	background: rgba(255, 150, 0, 0.7)
+
+.card-car__modal:hover img
+	/* Ваши стили для изображения при наведении */
+
+.text-info
+	position: relative
+	z-index: 2
+	font-family: "Montserrat"
+	font-weight: 700
+	font-size: 14px
+	width: 100%
+
+
+.title__card-car,
+.info__card-car
+	font-family: "Montserrat"
+	font-weight: 700
+
+.title__card-car
+	text-transform: uppercase
+	font-size: 15px
+	font-weight: 900
+
+.info__card-car
+	font-size: 14px
+
+.flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	padding: 10px
+
+.price-r
+	font-size: 16px
+	font-family: "Montserrat", sans-serif
+
+.price-d
+	font-size: 14px
+	font-family: "Montserrat", sans-serif
+	color: $neutral-secondary
+
+.hr__form
+	border: 1px solid
+	margin-top: 20px
+
+.model-margin
+	margin-left: 10%
+	margin-right: 10%
+
+.modal
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	max-height: 90vh
+	overflow: auto
+
+.info__card-car
+	font-weight: 400
+
+.text__info__card-car
+	font-weight: 700
+
+.close-x,.close-x__page,.close-x__page_mobile,.close-x__form
+	font-size: 50px
+	color: gray
+	line-height: 1
+	position: absolute
+	top: 0
+	right: 0
+	padding: 10px
+	cursor: pointer
+	transition: 0.3s
+	&:hover
+		color: #FE6B00
+
+.modal-open
+	font-weight: 600
+	background-color: #111
+	padding: 10px
+	color: #ffffff
+	transition: 0.2s
+	&:hover
+		color: #fe6b00
+
+.visible
+	display: block
+.novisible
+	display: none
+
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.7)
+	display: none
+	z-index: 999
+
+.overlay.active
+	display: block
+
+body.modal-open
+	overflow: hidden
+
+.modal-backdrop
+	background-color: rgba(0, 0, 0, 0.5)
+
+
+.card-car__modal 
+	width: 440px
+
+.modal__page
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	overflow: auto
+	z-index: 1000
+
+.modal-content_page
+	max-height: 95%
+
+.modal-dialog-centered_page,.modal__page
+	max-height: 95%
+
+
+.tag__simplebar-content
+	font-size: 17px
+	margin: 10px
+	font-family: "Montserrat"
+	font-weight: 700
+
+.yellow-box
+	background-color: #FFCC00BF
+	padding: 10px
+	border-radius: 10px
+
+.text__simplebar-content
+	font-size: 15px
+	margin: 0
+	font-family: "Montserrat"
+	font-weight: 700
+
+
+.simplebar-content
+	background-color: #f6f6f6
+	padding: 15px
+	min-width: 25%
+
+.name
+	font-size: 30px
+	font-family: "Roboto Condensed"
+	font-weight: 700
+
+
+.info__simplebar-content
+	margin-bottom: 10px
+
+.car-color-image
+	max-width: 850px
+	height: auto
+
+#myModal__page
+	width: 95%
+
+.circle
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: 1px solid #e0e0e0
+	margin: 3px
+
+.circle-list
+	display: flex
+	flex-wrap: wrap
+
+.padding__modal-title
+	padding-left: 15px
+
+.circle-activ
+	border: 2px solid black
+
+.price-list
+	padding-left: 20px 
+
+.circle-white
+	background-color: #ffffff
+
+.circle-metalic
+	background-color: #e0e0e0
+
+.circle-black
+	background-color: #1c1a1b
+
+.circle-red
+	background-color: #e61402
+
+.circle-blue
+	background-color: #4829e1
+
+.circle-carbon-metalic
+	background-color: #7a7a7a
+
+.main-display
+	margin-left: 40px
+
+.button-list
+	max-width: 210px
+	padding-right: 20px
+	font-weight: 400
+	font-family: "Montserrat"
+	align-items: right
+	align-content: right
+	text-align: right
+
+.btn__main-display
+	background-color: #FFCC00
+	color: #555555
+	font-size: 19px
+	font-weight: 700
+	padding: 10px 20px 10px 20px
+	font-family: "Roboto Condensed"
+	border-radius: 5px
+	border: 1px solid #dadada
+
+.btn__main-display_enabled
+	color: #000000
+	box-shadow: 0 0 10px 10px rgba(255, 115, 0, 0.5)
+	border: none
+
+.price__price-list
+	font-size: 28px
+	font-weight: 700
+	font-family: "Roboto Condensed"
+	color: black
+
+.text__price-list
+	font-size: 18px
+	font-weight: 700
+	font-family: "Roboto Condensed"
+	line-height: 1
+
+.btn__prw
+	font-weight: 400
+	font-family: "Roboto Condensed"
+	font-size: 18px
+	transition: 0.3s
+	&:hover
+		color: #fe6b00
+
+.description__btn__main-display
+	text-align: right
+	color: black
+	margin-top: 10px
+
+#myModal__page_mobile
+	display: none
+	z-index: 10000
+
+.modal__page_mobile,.modal-content_page_mobile
+	height: 100%
+	margin: 0
+
+.modal-content_page_mobile
+	padding: 0
+
+.simplebar-content_page_mobile
+	margin-bottom: 15px
+
+
+// .radio-label
+// 	display: inline-block
+// 	width: 30px
+// 	height: 30px
+// 	background-color: #ff0000
+// 	border: 2px solid #000
+// 	border-radius: 50%
+// 	cursor: pointer
+
+// input[type="radio"]:checked + .radio-label
+// 	content: '\2022'
+	
+
+// input[type="radio"]
+// 	display: inline-block
+// 	width: 15px
+// 	height: 15px
+// 	margin: 0
+// 	padding: 0
+// 	background-color: #ffffff
+// 	border: 1px solid #000000
+// 	border-radius: 50%
+// 	cursor: pointer
+
+#exampleRadios1,#exampleRadios2,#exampleRadios3
+	appearance: auto
+
+.chekbox
+	margin-top: 10px
+	margin-bottom: 10px
+
+.image__card-car
+	max-width: 100%
+	height: auto
+
+.form-check
+	padding: 5px
+	align-items: center
+	background-color: #e9e9e9
+	font-family: 'Montserrat'
+	font-weight: 700
+	margin: 5px
+
+.form-check-label
+	margin: 0
+	padding-left: 5px 
+
+.active-radio
+	border-radius: 5px
+	background-color: #FFCC00
+
+.form_myModal
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 10000
+	display: none
+
+.form-color
+	background-color: #FE6B00
+	padding: 30px
+
+.chekbox__form__label
+	color: #FE6B00
+
+.controls
+	background-color: #ffffff
+	border: 1px solid #52290cc4
+	padding: 10px
+
+.control-label
+	margin-top: 10px
+
+.controls
+	color: #FE6B00
+
+.form-group input::placeholder
+	color: #52290cc4
+
+.control-label
+	font-size: 14px
+	font-family: 'Montserrat'
+	font-weight: 700
+	margin-bottom: 2px
+
+.chekbox__form__label
+	font-size: 14px
+	font-family: 'Montserrat'
+	font-weight: 700
+	margin-bottom: 2px
+
+#chekbox__form
+	appearance: auto
+	margin-right: 5px
+
+.button_form
+	color: #111
+	background-color: #fff
+	border-color: #f2f2f2
+	max-width: 105px
+	padding: 10px
+	border-radius: 5px
+	margin-top: 20px
+	margin-bottom: 20px
+	font-size: 14px
+	font-family: 'Roboto Condensed'
+	font-weight: 700
+	transition: 0.3s
+	&:hover
+		color: #ffffff
+
+
+.termsofuse
+	font-size: 12px
+	line-height: 120%
+	max-width: 350px
+	margin: 0 0 15px
+	font-family: 'Montserrat'
+	font-weight: 700
+	color: #000000
+
+.link__form
+	text-decoration: underline
+	transition: 0.3s
+	&:hover
+		color: #FFFFFF
+
+.desc__form
+	font-size: 14px
+	margin: 0 0 15px
+	font-family: 'Montserrat'
+	font-weight: 400
+	color: #000000
+
+.form_group_nodisplay
+	display: none
+
+.form-h3-upper-style
+	font-size: 20px
+	// font-weight: 900
+	text-transform: uppercase
+	margin-bottom: 1em
+	line-height: 1.2em
+	padding-right: 40px
+	// font-family: 'Montserrat'
+	font-weight: 900
+	color: #000000
+	font-weight: 400
+	font-family: "Roboto Condensed"
+
+.description__btn__main-display
+	font-size: 10px
+
+.form-h3-upper-style,.title__card-car,.text__info__card-car,.price-r,.hr__form,.btn__prw,.tag__simplebar-content,.name,.info__simplebar-content,.form-check-label,.text__simplebar-content,.price__price-list
+	color: #242438
+
+.yellow-box,.btn__main-display,.btn__main-display_enabled,.active-radio,.button_form
+	background-color: #ff9600
+
+.btn__prw
+	padding-bottom: 5px
+
+.color-text__form
+	color: #FE6B00
+
+.form-color
+	background-color: $neutral-primary
+	background-color: #111
+
+.color-text__form_desc,.color-text__form_title
+	color: #FFFFFF
+
+@media screen and (max-width: 1610px)
+
+	.card-car__modal
+		padding: 5px
+	.modal-content,.modal-content_page
+		padding: 10px
+		margin: 3%
+	.card-car__modal 
+		width: fit-content
+	.car-color-image
+		max-width: 100%
+		height: auto
+	.form-color
+		padding: 30px
+
+@media screen and (max-width: 1000px)
+	.title__card-car
+		font-size: 12px
+	.info__card-car
+		font-size: 11px
+	.price-r
+		font-size: 15px
+	.price-d
+		font-size: 11px
+	#myModal__page
+		display: none
+	.form-color
+		padding: 30px
+
+@media screen and (max-width: 768px)
+	.wrapper__form
+		flex-wrap: wrap
+		justify-content: center!important
+	.model-margin
+		margin-top: 15%
+		margin-bottom: 15%
+		margin-left: 10%
+		margin-right: 10%
+	.modal-content_page_mobile
+		padding: 0
+	.form-color
+		padding: 30px
+
+@media screen and (max-width: 500px)
+	.text__price-list
+		font-size: 14px
+	.price__price-list
+		font-size: 16px
+		font-weight: 700
+		font-family: "Roboto Condensed"
+	.description__btn__main-display
+		font-size: 8px
+	.form-color
+		padding: 30px
+
+
+@media screen and (max-width: 410px)
+	.model-margin
+		margin-left: 3%
+		margin-right: 3%
+		margin-top: 20%
+		margin-bottom: 20%
+	.price-button
+		flex-direction: column
+	.btn__main-display
+		margin: 10px
+	.button-list
+		padding-left: 20px
+		padding-right: 0
+	.description__btn__main-display,.button-list
+		text-align: left
+	.form-color
+		padding: 30px
