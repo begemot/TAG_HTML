@@ -31,7 +31,6 @@
     "gulp-uglify-es": "^2.0.0",
     "inputmask": "^5.0.5",
     "jquery-selectric": "^0.2.0",
-    "node-sass": "^7.0.1",
     "path": "^0.12.7",
     "popper.js": "^1.16.1",
     "sass": "^1.50.1",

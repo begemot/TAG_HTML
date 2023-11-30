@@ -26,7 +26,7 @@ const { src, dest, parallel, series, watch } = require('gulp'),
 const	gmWatch			= true;
 let		stateLinkStyles	= false,
 		speedMode		= false;
-		sass.compiler	= require('node-sass');
+		sass.compiler	= require('sass');
 
 
 // Local Server
