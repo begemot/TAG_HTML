@@ -1,3 +1,4 @@
+let chek = false
 $(document).ready(function() {
     $('.modal-open').click(function() {
         $('.modal').addClass('visible');
@@ -57,8 +58,15 @@ $(document).ready(function() {
             $('.chekbox').css({
                 'display':'block'
             })
+            $('.description__btn__main-display').css({
+                'visibility':'visible'
+            })
             $('.btn__main-display').removeClass('btn__main-display_enabled');
+            $('.form-check').removeClass('active-radio');
+            $('input[type="radio"]').prop('checked', false);
+            
         }
+        $('.car-color-image_max').text($(this).data('newprice'));
     });
 
     $('.close-x').click(function() {
@@ -155,5 +163,21 @@ $(document).ready(function() {
         } else {
           $('.form_group_nodisplay').slideUp();
         }
+    });
+
+    $(".arrow-animation").click(function() {
+        $(".arrow").toggleClass("up");
+    });
+
+    $(".arrow-animation").click(function() {
+        if (chek == false) {
+            $('.form_group_allcar').slideDown();
+            chek = true
+        }
+        else {
+            $('.form_group_allcar').slideUp();
+            chek = false
+        }
+        $(".form_group_allcar").toggleClass("form_group_allcar_display");
     });
 });

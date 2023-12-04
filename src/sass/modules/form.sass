@@ -239,13 +239,10 @@ body.modal-open
 	margin-left: 40px
 
 .button-list
-	max-width: 210px
-	padding-right: 20px
 	font-weight: 400
 	font-family: "Montserrat"
-	align-items: right
-	align-content: right
-	text-align: right
+	padding-left: 2px
+	padding-top: 20px
 
 .btn__main-display
 	background-color: #FFCC00
@@ -283,9 +280,8 @@ body.modal-open
 		color: #fe6b00
 
 .description__btn__main-display
-	text-align: right
 	color: black
-	margin-top: 10px
+	
 
 #myModal__page_mobile
 	display: none
@@ -325,6 +321,27 @@ body.modal-open
 // 	border: 1px solid #000000
 // 	border-radius: 50%
 // 	cursor: pointer
+
+.car-color-image_max
+	font-size: 40px!important
+	padding-right: 12%!important
+	padding-bottom: 10%!important
+
+.image__card-car
+	position: relative
+
+.new-price
+	position: absolute
+	bottom: 0
+	right: 0
+	padding: 30px
+	font-size: 22px
+	font-family: 'Roboto Condensed'
+	font-weight: 700
+	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white
+	border-radius: 50%
+	color: #333
+
 
 #exampleRadios1,#exampleRadios2,#exampleRadios3
 	appearance: auto
@@ -424,6 +441,16 @@ body.modal-open
 	font-weight: 700
 	color: #000000
 
+.color-arrow__form
+	color: #FFFFFF
+	font-family: 'Montserrat'
+	transition: 0.3s
+	&:hover
+		color: #FE6B00
+
+.arrow
+	font-size: 24px
+
 .link__form
 	text-decoration: underline
 	transition: 0.3s
@@ -455,6 +482,21 @@ body.modal-open
 
 .description__btn__main-display
 	font-size: 10px
+	padding-top: 5px
+
+.mini-card_link
+	text-decoration: none
+	transition: color 0.3s ease
+
+.name__mini-card,.price__mini-card
+	transition: color 0.3s ease
+
+.mini-card_link:hover
+	color: #FE6B00
+.mini-card_link:hover .name__mini-card
+	color: #FE6B00
+.mini-card_link:hover .price__mini-card
+	color: #FE6B00
 
 .form-h3-upper-style,.title__card-car,.text__info__card-car,.price-r,.hr__form,.btn__prw,.tag__simplebar-content,.name,.info__simplebar-content,.form-check-label,.text__simplebar-content,.price__price-list
 	color: #242438
@@ -474,6 +516,48 @@ body.modal-open
 
 .color-text__form_desc,.color-text__form_title
 	color: #FFFFFF
+
+.mini-card
+	display: flex
+	flex-direction: column
+	background-color: #FFFFFF
+	border-radius: 25px
+	padding: 10px
+	margin: 10px
+	max-width: 220px
+	align-items: center
+	justify-content: center
+
+.price__mini-card,.name__mini-card
+	font-weight: 400
+	font-family: "Roboto Condensed"
+	color: #111111
+	font-size: 16px
+
+.form_group_allcar
+	display: none
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+
+.form_group_allcar_display
+	display: flex!important
+
+.arrow
+	display: inline-block
+	transition: transform 0.5s ease, padding-bottom 0.5s ease
+
+.arrow.up
+	transform: rotate(180deg)
+	padding-bottom: 4px
+
+.arrow-animation
+	cursor: pointer
+
+.form-color
+	max-height: 90vh
+	overflow: auto
+
 
 @media screen and (max-width: 1610px)
 
@@ -517,6 +601,8 @@ body.modal-open
 		padding: 0
 	.form-color
 		padding: 30px
+	.car-color-image_max
+		font-size: 30px!important
 
 @media screen and (max-width: 500px)
 	.text__price-list
@@ -529,6 +615,8 @@ body.modal-open
 		font-size: 8px
 	.form-color
 		padding: 30px
+	.car-color-image_max
+		font-size: 20px!important
 
 
 @media screen and (max-width: 410px)
@@ -539,11 +627,10 @@ body.modal-open
 		margin-bottom: 20%
 	.price-button
 		flex-direction: column
-	.btn__main-display
-		margin: 10px
+		
 	.button-list
-		padding-left: 20px
-		padding-right: 0
+		padding-top: 20px
+
 	.description__btn__main-display,.button-list
 		text-align: left
 	.form-color
