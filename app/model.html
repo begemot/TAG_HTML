@@ -179,7 +179,7 @@
 					<span class="product__price__txt-lg">6 940 000 ₽</span> (98 830 $)<br>
 					по б/н расчёту от: 7 290 000 ₽
 				</div>
-				<a href="#" class="link-more">
+				<a href="javascript:;" class="link-more get-commerce-purpose">
 					коммерческое предложение
 					<i class="demo-icon icon-arrow-more"></i>
 				</a>
@@ -1245,10 +1245,10 @@
 			<div class="product-about__content">
 				<h3 class="product-about__title">
 					<span>Обновленный</span><br>
-					Ford F-150 Raptor
+					Ford F-150 Raptor1
 				</h3>
 				<p class="product-about__text">Вы можете заказать этот автомобиль в компании Транс авто Груп уже сегодня!</p>
-				<a href="#" class="link-more">
+				<a href="javascript:;" class="link-more">
 					коммерческое предложение
 					<i class="demo-icon icon-arrow-more"></i>
 				</a>
@@ -1412,7 +1412,87 @@
 	<script src="assets/js/app.js"></script>
 	<!-- endbuild -->
 
-
-
+	<div id="form__myModal" class="form_myModal" >
+		<div class="modal-dialog-centered">
+			<div class="modal-content form-color">
+				<div class="d-flex justify-content-between align-items-start padding__modal-title">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="close-x__form">&times;</span>
+					</button>
+				</div>
+				<div class="form-h3-upper-style color-text__form">Оставить заявку на автомобиль</div>
+				<p class="desc__form color-text__form color-text__form_desc">Заполните, пожалуйста, форму. <br>Коммерческое предложение будет отправлено на Ваш e-mail</p>
+				<div class="d-flex">
+					<input type="checkbox" id="chekbox__form">
+					<label for="chekbox__form color-text__form" class="chekbox__form__label">В лизинг</label>
+				</div>
+				<div class="form_group_nodisplay">
+					<div class="form-group">
+						<label for="id_company" class="control-label color-text__form color-text__form_title">Ваша компания</label>
+						<div class="controls ">
+							<input type="text" name="company" maxlength="320" required="" id="id_company">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="id_inn" class="control-label color-text__form color-text__form_title">ИНН</label>
+						<div class="controls ">
+							<input type="text" name="INN" maxlength="320" required="" id="id_inn">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="id_email" class="control-label color-text__form color-text__form_title">Ваш e-mail</label>
+					<div class="controls ">
+						<input type="email" name="email" placeholder="youmail@mail.ru" maxlength="320" required="" id="id_email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="id_tel" class="control-label color-text__form color-text__form_title">Телефон</label>
+					<div class="controls ">
+						<input type="tel" name="phone" placeholder="+_ (___) ___-__-__" maxlength="320" required="" id="id_tel">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="id_name" class="control-label color-text__form color-text__form_title">Ваше имя</label>
+					<div class="controls ">
+						<input type="text" name="name" placeholder="Ваше имя" maxlength="320" required="" id="id_name">
+					</div>
+				</div>
+				<button class="button_form">Отправить</button>
+				<div class="termsofuse color-text__form">Заполняя данную контактную форму, вы даете согласие на <a href="#" target="_blank" class="link__form">обработку своих персональных данных</a></div>
+				<div class="termsofuse arrow-animation color-arrow__form">Посмотреть похожие автомобили <span class="arrow">&darr;</span></div>
+				<div class="form_group_allcar">
+					<a href="#" class="mini-card_link">
+						<div class="mini-card">
+							<div class="name__mini-card">Chevrolet Silverado 3500</div>
+							<div class="img__mini-card">
+								<img src="assets/img/catalog-filters/card-4.png" alt="car image">
+							</div>
+							<div class="price__mini-card">6 300 000 руб</div>
+						</div>
+					</a>
+					<a href="#" class="mini-card_link">
+						<div class="mini-card">
+							<div class="name__mini-card">Ford F-150</div>
+							<div class="img__mini-card">
+								<img src="assets/img/catalog-filters/card-5.png" alt="car image">
+							</div>
+							<div class="price__mini-card">6 000 000 руб</div>
+						</div>
+					</a>
+					<a href="#" class="mini-card_link">
+						<div class="mini-card">
+							<div class="name__mini-card">Chevrolet Colorado</div>
+							<div class="img__mini-card">
+								<img src="assets/img/catalog-filters/card-1.png" alt="car image">
+							</div>
+							<div class="price__mini-card">7 000 000 руб.</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
 </body>
 </html>

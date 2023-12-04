@@ -1,5 +1,20 @@
 let chek = false
 $(document).ready(function() {
+
+    $('.get-commerce-purpose').click(()=>{
+        $('.overlay').addClass('active');
+        $('.form_myModal').css({
+            'display':'block'
+        })
+    })
+    $('button.close').click(()=>{
+        closeModal();
+    });
+    function closeModal(){
+        $('.overlay').removeClass('active');
+    }
+
+
     $('.modal-open').click(function() {
         $('.modal').addClass('visible');
         $('.overlay').addClass('active');

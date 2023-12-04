@@ -40,6 +40,8 @@
 
 
 
+
+
 </head>
 <body>
 		<section class="hero">
@@ -255,8 +257,11 @@
 							</button>
 						</div>
 						<div class="d-flex justify-content-between wrapper__form">
-							<div class="card-car__modal" data-action="Standard">
-								<img src="assets/img/form/1.jpg" alt="car image" class="image__card-car img-fluid">
+							<div class="card-car__modal" data-action="Standard" data-newprice="6&nbsp;580&nbsp;000 р.">
+								<div class="image__card-car img-fluid">
+									<img src="assets/img/form/1.jpg" alt="car image" class="image__card-car img-fluid">
+									<div class="new-price">6&nbsp;580&nbsp;000 р.</div>
+								</div>
 								<div class="infoblock__modal">
 									<div class="text-info">
 										<span class="title__card-car">Standard</span><br>
@@ -269,16 +274,19 @@
 											Автоматическая, ECVT<br>
 											&#8203;
 										</span>
-										<hr class="hr__form">
+										<!-- <hr class="hr__form">
 										<div class="flex-center">
 											<span class="price-r"><strong>от 6&nbsp;580&nbsp;000 р.</strong></span>
 											<span class="price-d">72&nbsp;090 $</span>
-										</div>
+										</div> -->
 									</div>
 								</div>
 							</div>
-							<div class="card-car__modal" data-action="A-Spec">
-								<img src="assets/img/form/2.jpg" alt="car image" class="image__card-car img-fluid">
+							<div class="card-car__modal" data-action="A-Spec" data-newprice="6&nbsp;850&nbsp;000 р.">
+								<div class="image__card-car img-fluid">
+									<img src="assets/img/form/2.jpg" alt="car image" class="image__card-car img-fluid">
+									<div class="new-price">6&nbsp;850&nbsp;000 р.</div>
+								</div>
 								<div class="infoblock__modal">
 									<div class="text-info">
 										<span class="title__card-car">A-Spec</span><br>
@@ -291,16 +299,19 @@
 											Автоматическая, ECVT<br>
 											&#8203;
 										</span>
-										<hr class="hr__form">
+										<!-- <hr class="hr__form">
 										<div class="flex-center">
 											<span class="price-r"><strong>от 6&nbsp;850&nbsp;000 р.</strong></span>
 											<span class="price-d">75&nbsp;030 $</span>
-										</div>
+										</div> -->
 									</div>
 								</div>
 							</div>
-							<div class="card-car__modal" data-action="A-Spec Technology">
-								<img src="assets/img/form/3.jpg" alt="car image" class="image__card-car img-fluid">
+							<div class="card-car__modal" data-action="A-Spec Technology" data-newprice="7&nbsp;390&nbsp;000 р.">
+								<div class="image__card-car img-fluid">
+									<img src="assets/img/form/3.jpg" alt="car image" class="image__card-car img-fluid">
+									<div class="new-price">7&nbsp;390&nbsp;000 р.</div>
+								</div>
 								<div class="infoblock__modal">
 									<div class="text-info">
 										<span class="title__card-car">A-Spec Technology</span><br>
@@ -313,11 +324,11 @@
 											Механическая 6 ст.<br>
 											Автоматическая, ECVT
 										</span>
-										<hr class="hr__form">
+										<!-- <hr class="hr__form">
 										<div class="flex-center">
 											<span class="price-r"><strong>от 7&nbsp;390&nbsp;000 р.</strong></span>
 											<span class="price-d">80&nbsp;920 $</span>
-										</div>
+										</div> -->
 									</div>
 								</div>
 							</div>
@@ -409,20 +420,29 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="main-display">
-								<div class="name"><strong>Acura Integra <span class="comlpectation-name"></span> - <span class="color-name">Platinum White Pearl</span></strong></div>
-								<img class="car-color-image" src="assets/img/form/color-car/white.jpg" alt="car-image">
-								<div class="d-flex justify-content-between">
-									<div class="price-list">
-										<span class="text__price-list">цена от:</span><br>
-										<span class="price__price-list">6 580 000 руб.</span><br>
-										<span class="text__price-list">по б/н расчету от: 6 910 000<span></span> руб.</span>
-									</div>
+								<div class="info__simplebar-content">
 									<div class="button-list">
 										<button class="btn__main-display">Применить</button>
 										<p class="description__btn__main-display">Кнопка станет доступна после выбора параметров в фильтре слева</p>
 									</div>
+								</div>
+							</div>
+							<div class="main-display">
+								<div class="name"><strong>Acura Integra <span class="comlpectation-name"></span> - <span class="color-name">Platinum White Pearl</span></strong></div>
+								<div class="image__card-car img-fluid">
+									<img class="car-color-image" src="assets/img/form/color-car/white.jpg" alt="car-image">
+									<div class="new-price car-color-image_max">7&nbsp;390&nbsp;000 р.</div>
+								</div>
+								<div class="d-flex justify-content-between">
+									<!-- <div class="price-list">
+										<span class="text__price-list">цена от:</span><br>
+										<span class="price__price-list">6 580 000 руб.</span><br>
+										<span class="text__price-list">по б/н расчету от: 6 910 000<span></span> руб.</span>
+									</div> -->
+									<!-- <div class="button-list">
+										<button class="btn__main-display">Применить</button>
+										<p class="description__btn__main-display">Кнопка станет доступна после выбора параметров в фильтре слева</p>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -443,7 +463,10 @@
 								<span aria-hidden="true" class="close-x__page_mobile">&times;</span>
 							</button>
 						</div>
-						<img class="car-color-image" src="assets/img/form/color-car/white.jpg" alt="car-image">
+						<div class="image__card-car img-fluid">
+							<img class="car-color-image" src="assets/img/form/color-car/white.jpg" alt="car-image">
+							<div class="new-price car-color-image_max">7&nbsp;390&nbsp;000 р.</div>
+						</div>
 						<div class="simplebar-content simplebar-content_page_mobile">
 							<div class="info__simplebar-content">
 								<p class="tag__simplebar-content"><strong>Цвет кузова:</strong></p>
@@ -511,18 +534,22 @@
 										</div>
 									</div>
 								</div>
+								<div class="button-list">
+									<button class="btn__main-display">Применить</button>
+									<p class="description__btn__main-display">Кнопка станет доступна после выбора параметров в фильтре слева</p>
+								</div>
 							</div>
 						</div>
 						<div class="d-flex justify-content-between price-button">
-							<div class="price-list">
+							<!-- <div class="price-list">
 								<span class="text__price-list">цена от:</span><br>
 								<span class="price__price-list">6 850 000 руб.</span><br>
 								<span class="text__price-list">по б/н расчету от: <span>7 190 000</span> руб.</span>
-							</div>
-							<div class="button-list">
+							</div> -->
+							<!-- <div class="button-list">
 								<button class="btn__main-display">Применить</button>
 								<p class="description__btn__main-display">Кнопка станет доступна после выбора параметров в фильтре слева</p>
-							</div>
+							</div> -->
 						</div>	
 					</div>
 				</div>	
@@ -544,15 +571,15 @@
 					</div>
 					<div class="form_group_nodisplay">
 						<div class="form-group"> 
-							<label for="id_email" class="control-label color-text__form color-text__form_title">Ваша компания</label>
+							<label for="id_company" class="control-label color-text__form color-text__form_title">Ваша компания</label>
 								<div class="controls ">
-									<input type="email" name="company" maxlength="320" required="" id="id_email">
+									<input type="text" name="company" maxlength="320" required="" id="id_company">
 								</div>
 						</div>
 						<div class="form-group"> 
-							<label for="id_email" class="control-label color-text__form color-text__form_title">ИНН</label>
+							<label for="id_inn" class="control-label color-text__form color-text__form_title">ИНН</label>
 								<div class="controls ">
-									<input type="email" name="INN" maxlength="320" required="" id="id_email">
+									<input type="text" name="INN" maxlength="320" required="" id="id_inn">
 								</div>
 						</div>
 					</div>
@@ -563,19 +590,49 @@
 							</div>
 					</div>
 					<div class="form-group"> 
-						<label for="id_email" class="control-label color-text__form color-text__form_title">Телефон</label>
+						<label for="id_tel" class="control-label color-text__form color-text__form_title">Телефон</label>
 							<div class="controls ">
-								<input type="email" name="phone" placeholder="+_ (___) ___-__-__" maxlength="320" required="" id="id_email">
+								<input type="tel" name="phone" placeholder="+_ (___) ___-__-__" maxlength="320" required="" id="id_tel">
 							</div>
 					</div>
 					<div class="form-group"> 
-						<label for="id_email" class="control-label color-text__form color-text__form_title">Ваше имя</label>
+						<label for="id_name" class="control-label color-text__form color-text__form_title">Ваше имя</label>
 							<div class="controls ">
-								<input type="email" name="name" placeholder="Ваше имя" maxlength="320" required="" id="id_email">
+								<input type="text" name="name" placeholder="Ваше имя" maxlength="320" required="" id="id_name">
 							</div>
 					</div>
 					<button class="button_form">Отправить</button>
 					<div class="termsofuse color-text__form">Заполняя данную контактную форму, вы даете согласие на <a href="#" target="_blank" class="link__form">обработку своих персональных данных</a></div>
+					<div class="termsofuse arrow-animation color-arrow__form">Посмотреть похожие автомобили <span class="arrow">&darr;</span></div>
+					<div class="form_group_allcar">
+						<a href="#" class="mini-card_link">
+							<div class="mini-card">
+								<div class="name__mini-card">Chevrolet Silverado 3500</div>
+								<div class="img__mini-card">
+									<img src="assets/img/catalog-filters/card-4.png" alt="car image">
+								</div>
+								<div class="price__mini-card">6 300 000 руб</div>
+							</div>
+						</a>
+						<a href="#" class="mini-card_link">
+							<div class="mini-card">
+								<div class="name__mini-card">Ford F-150</div>
+								<div class="img__mini-card">
+									<img src="assets/img/catalog-filters/card-5.png" alt="car image">
+								</div>
+								<div class="price__mini-card">6 000 000 руб</div>
+							</div>
+						</a>
+						<a href="#" class="mini-card_link">
+							<div class="mini-card">
+								<div class="name__mini-card">Chevrolet Colorado</div>
+								<div class="img__mini-card">
+									<img src="assets/img/catalog-filters/card-1.png" alt="car image">
+								</div>
+								<div class="price__mini-card">7 000 000 руб.</div>
+							</div>
+						</a>
+					</div>
 				</div>	
 			</div>
 		</div>
@@ -592,6 +649,8 @@
 
 
 
-	<div class="overlay"></div>
+
+
+
 </body>
 </html>
