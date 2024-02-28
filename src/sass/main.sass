@@ -291,7 +291,7 @@ a
 
 	table
 		width: 100%
-		min-width: 708px
+		//min-width: 708px
 
 	td
 		padding: 11px 0 9px 40px
@@ -324,11 +324,33 @@ a
 
 	&--style-2
 		table
-			min-width: 740px
+			//@include media-breakpoint-down(sm)
+			//width: 440px
 
-			@include media-breakpoint-up(md)
-				min-width: 100%
+			th.hide
+				@include media-breakpoint-down(sm)
+					//color: red
+					display: none
+			tr.second_line
 
+				@include media-breakpoint-up(md)
+					display: none
+
+			tr.first_line
+				td.hide
+					@include media-breakpoint-down(sm)
+						color: red
+						display: none
+				td
+					@include media-breakpoint-down(sm)
+						border: none
+						padding-top: 10px
+						padding-bottom: 0
+
+
+			thead th.hide
+				@include media-breakpoint-down(sm)
+					display: none
 		th
 			padding-top: 0
 			padding-bottom: 10px
@@ -339,7 +361,7 @@ a
 				padding-left: 0
 
 		td
-			padding-top: 19px
+			padding-top: 11px
 			padding-bottom: 20px
 
 		td,
@@ -372,6 +394,8 @@ a
 
 				@include media-breakpoint-up(lg)
 					width: 174px
+				//@include media-breakpoint-down(sm)
+				font-weight: bold
 
 .table-def
 	width: 100%
